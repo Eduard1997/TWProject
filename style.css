@@ -1,0 +1,21 @@
+.background {
+    background-image:url(./back.jpg);
+    position: relative;
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+}
+
+
+#titlu{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Exo 2';
+}
+
+.margin-left{
+    margin-left:300px;
+}
+
+.margin-right{
+    margin-right: 300px;
+}
