@@ -12,10 +12,37 @@
     font-family: 'Exo 2';
 }
 
-.margin-left{
-    margin-left:300px;
+.margin-cont{
+    position: relative;
+    left: 100px;
 }
 
-.margin-right{
-    margin-right: 300px;
+.margin-cont div h2{
+
+   	position: relative;
+   	bottom: 10px;
+}
+
+.margin-log_in {
+    position: relative;
+    right:400px;
+}
+
+.margin-log_in img{
+    width: 128px;
+    height: 128px;
+}
+
+
+#chenar{
+	position: relative;
+	bottom: 20px;
+	display: inline-block;
+	height: 40px;
+	width: 150%;
+
+}
+.logo img
+{
+    display: block;
 }
