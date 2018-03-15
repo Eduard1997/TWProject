@@ -8,40 +8,53 @@
 	        <meta charset="UTF-8">
 	    </head>
 	    <body class="background">
-	        
-	    <h1 id="titlu"><b> Bine ati venit, rau ati nimerit!</b></h1>
-	        
+			<header>
+				<div class="meniu">
+					<!--sa facem sectiunea home si restul-->
+					<button class="scroll"><a href="#home">Acasa</a></button>
+					<button class="scroll"><a href="#about">Despre noi</a></button>
+					<button class="scroll"><a href="#logIn">Log in</a></button>
+					<button class="scroll"><a href="#home">Algoritm note</a></button>
+					<button class="scroll"><a href="#home">Contacteaza-ne</a></button>
+				</div>
+			</header>
+			<section id="logIn">
+	    <h1 id="titlu"><b> Bine ati venit, rau ati nimerit!</b></h1>  
 	    <div style="width: 100%;">
 	            <div style="float:left;" class="margin-cont">
 	                <h1>Creare cont</h1>
-	                <br/>
+					<br/>
+					<form action="dataBase.txt" method="POST">
                         <div> 
                         <h2>Numele tău</h2>
-	                        <p><input id="chenar" type="text" placeholder="Da-i numele tau aicea"></p>
+	                        <p><input id="chenar" type="text" placeholder="Da-i numele tau aicea" name="nume"></p>
                         </div>
 
                         <div>
                         <h2>User</h2>
-                            <p><input id="chenar" type="text" placeholder="Da-i user-u tau aicea"></p>
+                            <p><input id="chenar" type="text" placeholder="Da-i user-u tau aicea" name="user"></p>
 	                    </div>
 
 	                    <div>
 	                    <h2>Password</h2>
-	                        <p><input id="chenar" type="password" placeholder="Da-i parola ta aicea"></p>
-	                    </div>
-
+	                        <p><input id="chenar" type="password" placeholder="Da-i parola ta aicea" name="Password"></p>
+						</div>
+						
+						<input class = "submitButton" type="submit" value="Creare cont" target="top">
+					</form>
 	            </div>
 	            <div style="float: right;" class="margin-log_in">
-	                <h1>Log in</h1>
+					<h1>Log in</h1>
+				<br/><br/>
 	                <div class="logo">
 	                <img src="./student.jpg" alt="student">
-	                <br/>
+	                
 	                <img src="./profesor.jpg" alt="profesor">
 	                </div>
 
 	            </div>
 	         </div>
 	         <div style="clear:both"></div>
-	        
+	        </section>
 	    </body>
 	</html>
