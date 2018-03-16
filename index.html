@@ -1,67 +1,102 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 
-	<html>
-	    <head>
-	        <link rel='stylesheet' type='text/css' href="./style.css" media="all">
-	        <link href="https://fonts.googleapis.com/css?family=Exo+2:400i" rel="stylesheet">
-	        <title>eStudy</title>
-	        <meta charset="UTF-8">
-	    </head>
-	    <body >
-			<header>
-				<nav class="meniu">
-					<!--sa facem sectiunea home si restul-->
-					<button class="scroll"><a href="#home"><b>Acasa</b></a></button>
-					<button class="scroll"><a href="#about"><b>Despre noi</b></a></button>
-					<button class="scroll"><a href="#logIn"><b>Log in</b></a></button>
-					<button class="scroll"><a href="#home"><b>Algoritm note</b></a></button>
-					<button class="scroll"><a href="#home"><b>Contacteaza-ne</b></a></button>
-				</nav>
-			</header>
-			<section id="home">
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel='stylesheet' type='text/css' href="./style.css" media="all">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400i" rel="stylesheet">
+	<title>eStudy</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<header>
+		<nav class="meniu">
+			<!--sa facem sectiunea home si restul-->
+			<a href="#home"><b>Acasă</b></a>
+			<a href="#about"><b>Despre noi</b></a>
+			<a href="#logIn"><b>LogIn</b></a>
+			<a href="#algoritm"><b>Algoritm note</b></a>	
+			<a href="#contact"><b>Contactează-ne</b></a>
+			
+		</nav>
+	</header>
+	<section id="home">
+	</section>
+	<section id="about" align="middle">
+		<h1 id="about-title">Despre noi</h1>
+		<h2 id="about-text">Suntem o echipă de studenți dedicați de la Facultatea de Informatică din Iași și am colaborat la acest proiect 
+			pentru a vă spori șansele de reușită în cadrul disciplinei <em>Tehnologii Veb</em> prin implentarea unor algoritmi care să vă țină mereu la curent cu
+			situația dumneavoastră.
+		</h2>
+		<img id="teo" src="teo.png" align="top">
+		<img id="oly" src="oly.jpg" align="bottom">
+		<img id="edy" src="edy.jpg" align="top">
+	</section>
+
+	<section id="logIn">
+
+		<div style="width: 100%;">
+			<div style="float:left;" class="margin-cont">
+
+				<h1>Creare cont</h1>
+				<label><input id="radio1" type="radio" name="profesie">Profesor</label>
+				<label><input id="radio2" type="radio" name="profesie">Student</label>
+				
+				<form action="dataBase.txt" method="POST">
+					<div>
+						<h2>Numele tău</h2>
+						<p>
+							<input id="chenar" type="text" placeholder="Pinguinescu L. Tuxy" name="nume">
+						</p>
+					</div>
+
+					<div>
+						<h2>User</h2>
+						<p>
+							<input id="chenar" type="text" placeholder="Pinguinescu L. Tuxy" name="user">
+						</p>
+					</div>
+
+					<div>
+						<h2>Password</h2>
+						<p>
+							<input id="chenar" type="password" placeholder="Pinguinescu L. Tuxy" name="Password">
+						</p>
+					</div>
 					
-				 <h1 id="titlu"><b> Bine ati venit, rau ati nimerit!</b></h1> 
-				 
-			</section>
-			<section id="logIn">
-	    
-	    <div style="width: 100%;">
-	            <div style="float:left;" class="margin-cont">
-	            	
-	                <h1>Creare cont</h1>
-	                
 					<br/>
-					<form action="dataBase.txt" method="POST">
-                        <div> 
-                        <h2>Numele tău</h2>
-	                        <p><input id="chenar" type="text" placeholder="Da-i numele tau aicea" name="nume"></p>
-                        </div>
+					<input class="submitButton" type="submit" value="Creare cont" target="top">
+				</form>
+			</div>
+			<div style="float: right;" class="margin-log_in">
+				<h1>Log in</h1>
+				<br/>
+				<br/>
+				<!--
+				<div class="logo">
+					<img src="./student.jpg" alt="student">
 
-                        <div>
-                        <h2>User</h2>
-                            <p><input id="chenar" type="text" placeholder="Da-i user-u tau aicea" name="user"></p>
-	                    </div>
+					<img src="./profesor.jpg" alt="profesor">
+				</div>
+			-->
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</section>
+<section id="algoritm">
 
-	                    <div>
-	                    <h2>Password</h2>
-	                        <p><input id="chenar" type="password" placeholder="Da-i parola ta aicea" name="Password"></p>
-						</div>
-						
-						<input class = "submitButton" type="submit" value="Creare cont" target="top">
-					</form>
-	            </div>
-	            <div style="float: right;" class="margin-log_in">
-					<h1>Log in</h1>
-				<br/><br/>
-	                <div class="logo">
-	                <img src="./student.jpg" alt="student">
-	                
-	                <img src="./profesor.jpg" alt="profesor">
-	                </div>
+</section>
 
-	            </div>
-	         </div>
-	         <div style="clear:both"></div>
-	        </section>
-	    </body>
-	</html>
+<section id="contact">
+	
+
+</section>
+
+
+</body>
+
+</html>
