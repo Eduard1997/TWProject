@@ -1,32 +1,76 @@
-.background {
+body
+{
+     margin: 0px;
+}
+
+
+header{
+    display:block;
+    height:60px;
+    width: 100%;
+    background-color:   #ffffff ;
+    backface-visibility: solid;
+    position: fixed;
+    top:0%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style:solid;
+    opacity: 1;
+    overflow: hidden;
+    order: 1;
+}
+.meniu button
+{
+    background:#ffffff;
+    display: inline-block;
+    height:60px;
+    width: 150px;
+    border-style: none;
+    background-size: 100%;
+}
+.meniu button:hover
+{
+    background-color:  #ccffdd;
+}
+.meniu button a
+{
+    color: #000;
+    font:   normal "Open Sans", sans-serif;
+    font-size: 130%;
+    text-align:    center;
+    font-color:#000;
+
+}
+#logIn {
     /*
     background-image:url(./back2.jpg);
     position: relative;
     background-repeat:repeat;
     background-size:10%;
-    */
-    margin: 0px;
+   */
     background-color: aqua;
 }
+#home
+{
+ background-image:url(./acasa1.jpg);    
+    background-repeat:no-repeat;
+    background-size:100%;
+    display: block;
+    height: 500px;
+    margin-bottom: 15%;
 
-header{
-    display:block;
-    height:50%;
-    background-color:black;
-    
-    
 
 }
-
-
-#titlu{
-    position: relative;
-    top: 0px;
-    text-align: center;
+/*
+#home #titlu{
+    padding-top: 30%;
+    text-align: left;
     font-size: 400%;
     font-family: 'Exo 2';
-}
 
+    
+}*/
 .margin-cont{
     position: relative;
     left: 20%;
@@ -81,9 +125,6 @@ background: red;
 }
 
 .submitButton{
-position: absolute;
-left: 65%;
-bottom: -2%;
 background:    #202a34;
 background:    -webkit-linear-gradient(#248eec, #202a34 50%, #248eec);
 background:    linear-gradient(#248eec, #202a34 50%, #248eec);
@@ -97,6 +138,11 @@ display:       inline-block;
 font:          normal "Open Sans", sans-serif;
 font-size: 100%;
 text-align:    center;
+
+
+position: absolute;
+left: 65%;
+bottom: -2%;
 text-shadow:   1px 1px #000000;
 
 }
