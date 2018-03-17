@@ -117,7 +117,7 @@ header{
     margin-left: 5%;
 }
 
-.margin-cont #chenar{
+.margin-cont .chenar{
     display: inline-block;
     height: 25px;
 }
@@ -144,9 +144,25 @@ header{
     text-decoration: none;
   }
 
-  #algoritm{
- background-image:url(./algoritm.jpg);
- margin-top: 60px;
+  .contact-button{
+    margin-left:   620px;
+    background:    #ff9900;
+    background:    -webkit-linear-gradient(#ff9900, #000000);
+    background:    linear-gradient(#ff9900, #000000);
+    border:        1px solid #000000;
+    border-radius: 5px;
+    padding:       8px 20px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal 700 20px/1 "Komika", cursive;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+    
+  }
+
+ #algoritm{
+    background-image:url(./algoritm.jpg);
+    margin-top: 60px;
     display: block;    
     height: 100%;
     width: 100%;
@@ -191,7 +207,7 @@ header{
     padding: 1%;
     display: inline-block;
     width: 400px;
-    background-color: transparent;
+    background-color: #ffd17b;
     border: 100%;
     border-color: rgb(145, 146, 146); 
     text-decoration-style: solid;
@@ -204,7 +220,7 @@ header{
     display: inline-block;
     width: 400px;
     height:200px;
-    background-color: transparent;
+    background-color: #ffd17b;
     border-color: rgb(145, 146, 146); 
     border-style: inset;
     border-width: 2px;
@@ -216,10 +232,32 @@ header{
     margin-right: 30%;
 }
 #teo-contact{
-    margin-top: -37%;
+    margin-top: -30%;
     margin-right: 2%;
 }
 #oly-contact{
-    margin-top: -15%;
+    margin-top: -10%;
     margin-right: 10%;
+}
+
+.error{
+    color: red;
+}
+
+
+#home #edy_back
+{
+    margin-top: 30%;
+    margin-right: -28%;
+}
+
+#home #oly_back
+{
+    margin-top: 15%;
+    margin-right: -45%;
+}
+#home #teo_back
+{
+    margin-right: 30%;
+    margin-top: 5%;
 }
