@@ -156,3 +156,70 @@ header{
 
 
 }
+#contact{
+    background-image:url(./contact_back.jpg);
+        margin-top: 60px;
+       display: block;    
+       height: 100%;
+       width: 100%;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+
+   
+   }
+ 
+#contact h2{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 160%;
+    color: rgb(2, 0, 0);
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: 300%;
+    color: rgb(2, 0, 0);
+    padding-top: 80px;
+}
+
+#contact form{
+    margin-top:5%;
+}
+#contact #casuta{
+    margin-left: 15%;
+    padding: 1%;
+    display: inline-block;
+    width: 400px;
+    background-color: transparent;
+    border: 100%;
+    border-color: rgb(145, 146, 146); 
+    text-decoration-style: solid;
+    text-decoration: black;
+    -webkit-text-size-adjust: 200px;
+}
+#contact #mesaj{
+    margin-left: 15%;
+    padding: 1%;
+    display: inline-block;
+    width: 400px;
+    height:200px;
+    background-color: transparent;
+    border-color: rgb(145, 146, 146); 
+    border-style: inset;
+    border-width: 2px;
+    
+}
+
+#edy-contact{
+    margin-top:-25%;
+    margin-right: 30%;
+}
+#teo-contact{
+    margin-top: -37%;
+    margin-right: 2%;
+}
+#oly-contact{
+    margin-top: -15%;
+    margin-right: 10%;
+}
