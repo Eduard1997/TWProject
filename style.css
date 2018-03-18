@@ -47,7 +47,7 @@ header{
 #home
 {
  background-image:url(./pag1.png);
- margin-top: 30px;
+    margin: auto;
     display: block;    
     height: 100%;
     width: 100%;
@@ -115,6 +115,18 @@ margin-top: 1%
     margin-left:-2.5%;
 }
 
+.margin-logIn{
+    display: inline-block;
+    margin-right: 20%;
+    margin-top: 8%;
+    color: #fcda9c;
+}
+
+.margin-logIn h1{
+    margin-left: 35%;
+    font-size: 300%;
+}
+
 #radio2{
     margin-left: 5%;
 }
@@ -164,7 +176,7 @@ margin-top: 1%
 
  #algoritm{
     background-image:url(./algoritm.jpg);
-    margin-top: 60px;
+    margin-bottom: 0;
     display: block;    
     height: 100%;
     width: 100%;
@@ -174,15 +186,54 @@ margin-top: 1%
 
 
 }
+
+#algoritm div
+{
+    
+}
+
+#algoritm #algoritm-titlu
+{
+    text-align: center;
+    font-size: 350%;
+    color: rgb(2, 0, 0);
+    font-family: 'Indie Flower', cursive;
+    padding-top: 5%;
+    margin-top: 0%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#algoritm p
+{
+    margin-top: -1%;
+    font-family: 'Salsa', cursive;
+    margin-left: 15%;
+    margin-right: 5%;
+    font-size: 120%;
+   
+    font-weight: bold;
+}
+#algoritm ul
+{
+    font-family: 'Salsa', cursive;
+       margin-left: 17%;
+    margin-right: 5%;
+    font-size: 120%;
+    
+      font-weight: bold;
+}
+
+
+
 #contact{
     background-image:url(./contact_back.jpg);
-        margin-top: 60px;
-       display: block;    
-       height: 100%;
-       width: 100%;
-       background-position: center;
-       background-repeat: no-repeat;
-       background-size: cover;
+    margin-top:-40px;
+    display: block;    
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
    
    }

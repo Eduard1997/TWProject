@@ -3,6 +3,8 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster+Two" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -81,23 +83,36 @@
 					<input id="buton" class="submitButton" type="submit" value="Submit" target="top" name="submit">
 				</form>
 			</div>
-			<div style="float: right;" class="margin-log_in">
+			<div style="float: right;" class="margin-logIn">
 				<h1>Log in</h1>
 				<br/>
 				<br/>
-				<!--
+				
 				<div class="logo">
-					<img src="./student.jpg" alt="student">
-
-					<img src="./profesor.jpg" alt="profesor">
+					<a href="student.html"><img src="./student.png" alt="student"></a>
+					<a href="profesor.html"><img src="./profesor.png" alt="profesor"></a>
 				</div>
-			-->
+			
 			</div>
 		</div>
 		<div style="clear:both"></div>
 	</section>
 <section id="algoritm">
-
+			<h1 id="algoritm-titlu" align="center"> Descrierea algoritmului folosit </h1>
+			<div>
+			<p>În funcție de cele introduse de profesori și de statistica generală, studenții logați în aplicație vor avea un profil personal de promovabilitate(de exemplu, daca un student a acumulat 8 prezențe și cel mai bun din an are 10, atunci va avea 80% șanse de promovare). </p>
+			<p>Studentul va primi un scor final public și un pronostic("DA/NU") de promovabilitate a materiei.</p>
+			<p>Evaluarea la această disciplină va consta din următoarele componente obligatorii:</p>
+			<ul>
+			<li><b>P</b> - Proiect</li>
+			<li><b>CF</b> - Commit-uri pe github/Facebook events</li>
+			<li><b>Pr</b> - Prezențe la disciplina Tehnologii Web;</li>
+			<li><b>A</b> - Activitate, intervenții la seminar/curs;</li>
+			<li><b>T</b> -  Notele celor 3 teste scrise neanunţate în cadrul cursului.</li>
+			</ul>
+			<p><b>PF</b> = <b>P</b> * 0.4 + <b>CF</b> * 0.3 + <b>Pr</b> * 0.1 + <b>A</b> * 0.1 + <b>T</b> * 0.1,  în care <b>T</b> = sum(<b>Ti</b> : i =(1, 2, 3)).</p>
+			<p>Pentru a promova, fiecare student trebuie să obţină minim 10 puncte la Pr, 5 puncte la P, CF, A și T. Informațiile vor putea fi partajate pe diverse rețele sociale.</p>
+			</div>
 </section>
 
 <section id="contact">
