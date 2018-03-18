@@ -61,35 +61,37 @@ header{
 
 #about-title{
     text-align: center;
-    font-size: 500%;
+    font-size: 450%;
     color: rgb(2, 0, 0);
-    padding-top: 60px;
     font-family: 'Indie Flower', cursive;
+    display: inline-block;
+    margin-top: -20px;
 }
 #about-text{
     font-family: 'Lobster Two', cursive;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
-    font-size: 160%;
+    font-size: 140%;
     color: rgb(2, 0, 0);
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: -5%
 }
 
 #edy{
-    margin-left: 10%;
-    margin-top: -18%;
-    
+ display: inline-block;
+ margin-top: 1%;
+
 }
 
 #oly{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: -1%;
+
 }
 
 #teo{
-    margin-right: 10%;
-    margin-top: -18%;
+display: inline-block;
+margin-top: 1%
     
 }
 
@@ -249,6 +251,7 @@ header{
 {
     margin-top: 30%;
     margin-right: -28%;
+
 }
 
 #home #oly_back
@@ -259,5 +262,5 @@ header{
 #home #teo_back
 {
     margin-right: 30%;
-    margin-top: 5%;
+    
 }

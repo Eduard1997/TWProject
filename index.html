@@ -3,6 +3,7 @@
 <html>
 
 <head>
+	<link rel='stylesheet' type='text/css' href="./responsive.css" media="all">
 	<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster+Two" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -25,20 +26,21 @@
 		</nav>
 	</header>
 	<section id="home">
-		 <img id="teo_back" src="edy_back.png" align="right">
+		 <img id="teo_back" src="teo_back.png" align="right">
 		 <img id="oly_back" src="oly_back.png" align="right">
 		 <img id="edy_back" src="edy_back.png" align="right">
 	</section>
 	<section id="about" align="middle">
-		<h1 id="about-title">Despre noi</h1>
-		<h2 id="about-text">Suntem o echipă de studenți dedicați de la Facultatea de Informatică din Iași și am colaborat la acest proiect 
-			pentru a vă spori șansele de reușită în cadrul disciplinei <em>Tehnologii Veb</em> prin implentarea unor algoritmi care să vă țină mereu la curent cu
-			situația dumneavoastră.
-		</h2>
-		<img id="teo" src="teo.png" align="top">
-		<img id="oly" src="oly.jpg" align="bottom">
-		<img id="edy" src="edy.jpg" align="top">
-	</section>
+			<img id="teo" src="teo.png">
+				<h1 id="about-title">Despre noi</h1>
+				<img id="edy" src="edy.jpg">
+				<h2 id="about-text" >Suntem o echipă de studenți dedicați de la Facultatea de Informatică din Iași și am colaborat la acest proiect 
+					pentru a vă spori șansele de reușită în cadrul disciplinei <em>Tehnologii Veb</em> prin implentarea unor algoritmi care să vă țină mereu la curent cu
+					situația dumneavoastră.
+				</h2>
+		
+				<img id="oly" src="oly.jpg" align="center">
+			</section>
 
 	<section id="logIn">
 
@@ -46,10 +48,10 @@
 			<div style="float:left;" class="margin-cont">
 
 				<h1>Creare cont</h1>
-				<label><input id="radio1" type="radio" name="profesie">Profesor</label>
-				<label><input id="radio2" type="radio" name="profesie">Student</label>
 				
 				<form method="POST" action="formular.php">
+						<label><input type="radio" name="profesor">Student</label>
+						<label><input type="radio" name="student">Profesor</label>
 					<div>
 						<h2>Numele tău</h2>
 						<p>
@@ -101,7 +103,7 @@
 		 <h2>Contactează-ne</h2>
 		 
 	<form action="sendmail.php" method="POST">
-		<input id="casuta"type="text" placeholder="Numele și prenumele dumnveastră" name="name"><br/>
+		<input id="casuta"type="text" placeholder="Numele și prenumele dumnveastră" name="nume"><br/>
 		<input id="casuta" type="email" placeholder="Email-ul dumnveastră" name="email"><br/>
 		<input id="casuta" type="text" placeholder="Numărul de telefon" name="telefon"><br/>
 		<textarea id="mesaj" type="text" placeholder="Write something.." name="mesaj"></textarea> 
