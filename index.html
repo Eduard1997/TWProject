@@ -3,6 +3,7 @@
 <html>
 
 <head>
+
 <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster+Two" rel="stylesheet">
@@ -15,17 +16,19 @@
 </head>
 
 <body>
+		
 	<header>
 		<nav class="meniu">
-			<!--sa facem sectiunea home si restul-->
 			<a href="#home"><b>Acasă</b></a>
 			<a href="#about"><b>Despre noi</b></a>
 			<a href="#logIn"><b>LogIn</b></a>
 			<a href="#algoritm"><b>Algoritm note</b></a>	
 			<a href="#contact"><b>Contactează-ne</b></a>
-			
+			<img id = "logo" src="Logo1.png" align="right">
 		</nav>
+		
 	</header>
+	
 	<section id="home">
 		 <img id="teo_back" src="teo_back.png" align="right">
 		 <img id="oly_back" src="oly_back.png" align="right">
@@ -36,7 +39,7 @@
 		<h1 id="about-title">Despre noi</h1>
 		<img id="edy" src="edy.jpg">
 		<h2 id="about-text" >Suntem o echipă de studenți dedicați de la Facultatea de Informatică din Iași și am colaborat la acest proiect 
-			pentru a vă spori șansele de reușită în cadrul disciplinei <em>Tehnologii Veb</em> prin implentarea unor algoritmi care să vă țină mereu la curent cu
+			pentru a vă spori șansele de reușită în cadrul disciplinei <em>Tehnologii Veb</em> prin implementarea unor algoritmi care să vă țină mereu la curent cu
 			situația dumneavoastră.
 		</h2>
 		
@@ -78,7 +81,6 @@
 						</p>
 					</div>
 					
-					<br/>
 					<input id="buton" class="submitButton" type="submit" value="Submit" target="top" name="submit">
 				</form>
 			</div>
@@ -88,8 +90,56 @@
 				<br/>
 				
 				<div class="logo">
-					<a href="student.html"><img src="./student.png" alt="student"></a>
-					<a href="profesor.html"><img src="./profesor.png" alt="profesor"></a>
+					<img id = "student" src="./student.png" alt="student" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+					<div id="id01" class="modal">
+  
+							<form class="modal-content animate">
+							  <div class="imgcontainer">
+								<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+								<img src="student.png" alt="Avatar" class="avatar">
+							  </div>
+						  
+							  <div class="container">
+								<label for="uname" style="color:black"><b>Username</b></label>
+								<input type="text" placeholder="Enter Username" name="uname" required>
+						  
+								<label for="psw" style="color:black"><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" name="psw" required>
+								  
+								<a href="student.html" target="_blank"><button type="button">Login</button></a>
+								
+							  </div>
+						  
+							  <div class="container" style="background-color:#f1f1f1">
+								<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><b>Cancel</b></button>
+							  </div>
+							</form>
+						  </div>
+					<img id = "student" src="profesor.png" alt="profesor" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+					<div id="id02" class="modal">
+  
+							<form class="modal-content animate" action="/action_page.php">
+							  <div class="imgcontainer">
+								<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+								<img src="profesor.png" alt="Avatar" class="avatar">
+							  </div>
+						  
+							  <div class="container">
+								<label for="uname" style="color:black"><b>Username</b></label>
+								<input type="text" placeholder="Enter Username" name="uname" required>
+						  
+								<label for="psw" style="color:black"><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" name="psw" required>
+								  
+								<a href="profesor.html" target="_blank"><button type="button">Login</button></a>
+								
+							  </div>
+						  
+							  <div class="container" style="background-color:#f1f1f1">
+								<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn"><b>Cancel</b></button>
+							  </div>
+							</form>
+						  </div>
 				</div>
 			
 			</div>
@@ -99,8 +149,8 @@
 <section id="algoritm">
 			<h1 id="algoritm-titlu" align="center"> Descrierea algoritmului folosit </h1>
 			<div>
-			<p>În funcție de cele introduse de profesori și de statistica generală, studenții logați în aplicație vor avea un profil personal de promovabilitate(de exemplu, daca un student a acumulat 8 prezențe și cel mai bun din an are 10, atunci va avea 80% șanse de promovare). </p>
-			<p>Studentul va primi un scor final public și un pronostic("DA/NU") de promovabilitate a materiei.</p>
+			<p>În funcție de cele introduse de profesori și de statistica generală, studenții logați în aplicație vor avea un profil personal de promovabilitate (de exemplu, dacă un student a acumulat 8 prezențe și cel mai bun din an are 10, atunci va avea 80% șanse de promovare). </p>
+			<p>Studentul va primi un scor final public și un pronostic ("DA/NU") de promovabilitate a materiei.</p>
 			<p>Evaluarea la această disciplină va consta din următoarele componente obligatorii:</p>
 			<ul>
 			<li><b>P</b> - Proiect</li>
@@ -111,7 +161,7 @@
 			</ul>
 			<p><b>PF</b> = <b>P</b> * 0.4 + <b>CF</b> * 0.3 + <b>Pr</b> * 0.1 + <b>A</b> * 0.1 + <b>T</b> * 0.1,  în care <b>T</b> = sum(<b>Ti</b> : i =(1, 2, 3)).</p>
 			<p>Pentru a promova, fiecare student trebuie să obţină minim 10 puncte la Pr, 5 puncte la P, CF, A și T. Informațiile vor putea fi partajate pe diverse rețele sociale.</p>
-			</div>
+			</div>	
 </section>
 
 <section id="contact">
@@ -131,7 +181,29 @@
 	  
 </section>
 
+<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+		
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+		</script>
 
+<script>
+		// Get the modal
+		var modal = document.getElementById('id02');
+		
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+		</script>
 </body>
 
 </html>
