@@ -24,7 +24,7 @@
 
 
 
-@media (min-height: 700px)
+@media (min-height: 1100px)
 {
 
 #about-title{
@@ -71,7 +71,7 @@ margin-top: 5%
 
 #home #edy_back
 {
-    margin-top: 150%;
+    margin-top: 130%;
     margin-right: -50%;
 }
 
