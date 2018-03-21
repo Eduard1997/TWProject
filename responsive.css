@@ -20,6 +20,220 @@
     margin-right: 38%;
 
 }
+#edy{
+    display: inline-block;
+    margin-top: 5%;
+    resize:both;
+    overflow: auto;
+    width: 15%;
+   
+   }
+   
+   #oly{
+
+       margin-top: 1%;
+       resize:both;
+    overflow: auto;
+    width: 15%;
+   
+   }
+   
+   #teo{
+   display: inline-block;
+   margin-top: 5%;
+   resize:both;
+    overflow: auto;
+    width: 9%;
+
+   }
+
+   .logo #student{
+    height: 10%;
+    width: 20%;
+    margin-top: -10%;
+    margin-left: 15%;
+   }
+
+   .margin-cont{
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 8%;
+    color: #fcda9c;
+}
+.margin-cont h1
+{
+    font-size: 300%;
+}
+.margin-cont label
+{
+    font-size: 130%;
+    margin-left:-2.5%;
+}
+
+.margin-logIn{
+    display: inline-block;
+    margin-right: 0%;
+    margin-top: -47%;
+    color: #fcda9c;
+}
+
+.margin-logIn h1{
+    margin-left: 35%;
+    font-size: 300%;
+}
+
+#radio2{
+    margin-left: 5%;
+}
+
+.margin-cont .chenar{
+    display: inline-block;
+    height: 25px;
+    width: 190px;
+}
+
+.margin-cont h2{
+    margin-bottom: -10px;
+    
+}
+
+#buton.submitButton {
+    background: #f7754d;
+    border-radius: 10px;
+    text-shadow: 4px 1px 13px #666666;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 3px ;
+    text-decoration: none;
+    margin-left: 140px;
+    margin-top: -50px;
+  }
+  
+  .submitButton:hover {
+    background: #af3a0c;
+    text-decoration: none;
+  }
+  
+  #algoritm{
+    background-image:url(./algoritm.jpg);
+    margin-bottom: 0;
+    display: block;    
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+#algoritm div
+{
+    
+}
+
+#algoritm #algoritm-titlu
+{
+    text-align: center;
+    font-size: 350%;
+    color: rgb(2, 0, 0);
+    font-family: 'Indie Flower', cursive;
+    padding-top: 5%;
+    margin-top: 0%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#algoritm p
+{
+    margin-top: -1%;
+    font-family: 'Salsa', cursive;
+    margin-left: 15%;
+    margin-right: 5%;
+    font-size: 100%;
+    font-weight: bold;
+    
+}
+#algoritm ul
+{
+    font-family: 'Salsa', cursive;
+    margin-left: 17%;
+    margin-right: 5%;
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+#contact{
+    background-image:url(./contact_back.jpg);
+    margin-top:-40px;
+    display: block;    
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   
+   }
+ 
+#contact h2{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 160%;
+    color: rgb(2, 0, 0);
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: 300%;
+    color: rgb(2, 0, 0);
+    padding-top: 80px;
+}
+
+#contact form{
+    margin-top:5%;
+}
+#contact #casuta{
+    margin-left: 15%;
+    padding: 1%;
+    display: inline-block;
+    width: 300px;
+    background-color: #ffd17b;
+    border: 100%;
+    border-color: rgb(145, 146, 146); 
+    text-decoration-style: solid;
+    text-decoration: black;
+    -webkit-text-size-adjust: 200px;
+}
+#contact #mesaj{
+    margin-left: 15%;
+    padding: 1%;
+    display: inline-block;
+    width: 300px;
+    height:150px;
+    background-color: #ffd17b;
+    border-color: rgb(145, 146, 146); 
+    border-style: inset;
+    border-width: 2px;
+    
+}
+
+#edy-contact{
+    width:20%;
+    margin-top:-35%;
+    margin-right: 30%;
+}
+#teo-contact{
+    width:15%;
+    margin-top: -40%;
+    margin-right: 2%;
+}
+#oly-contact{
+    width:18%;
+    margin-top: -20%;
+    margin-right: 10%;
+}
 }
 
 
@@ -65,8 +279,52 @@ margin-top: 5%
 }
 
 
-@media screen and (orientation:portrait)
 
+/*
+@media screen (min-width: 1400px) and (min-height:700px)
+{
+
+#about-title{
+    text-align: center;
+    font-size: 450%;
+    color: rgb(2, 0, 0);
+    font-family: 'Indie Flower', cursive;
+    display: inline-block;
+    margin-top: -20px;
+}
+#about-text{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 140%;
+    color: rgb(2, 0, 0);
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+#edy{
+ display: inline-block;
+ margin-top: 1%;
+
+}
+
+#oly{
+    margin-top: -1%;
+
+}
+
+#teo{
+display: inline-block;
+margin-top: 1%
+}
+
+
+}
+*/
+
+
+@media screen and (orientation:portrait)
 {
 
 #home #edy_back
@@ -280,44 +538,4 @@ margin-right: 2%;
 
 }
 
-@media screen (min-width: 1400px) and (min-height:700px)
-{
 
-#about-title{
-    text-align: center;
-    font-size: 450%;
-    color: rgb(2, 0, 0);
-    font-family: 'Indie Flower', cursive;
-    display: inline-block;
-    margin-top: -20px;
-}
-#about-text{
-    font-family: 'Lobster Two', cursive;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-    font-size: 140%;
-    color: rgb(2, 0, 0);
-    margin-right: 8%;
-    margin-left: 8%;
-    margin-top: 10%;
-}
-
-#edy{
- display: inline-block;
- margin-top: 1%;
-
-}
-
-#oly{
-    margin-top: -1%;
-
-}
-
-#teo{
-display: inline-block;
-margin-top: 1%
-    
-}
-
-
-}
