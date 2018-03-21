@@ -2,8 +2,29 @@
 @media screen and (min-width: 520px) and (max-width: 980px) and (max-height:  650px)
 {
 
+    #about-title{
+        text-align: center;
+        font-size: 400%;
+        color: rgb(2, 0, 0);
+        font-family: 'Indie Flower', cursive;
+        display: inline-block;
+        margin-top: -20px;
+    }
+    #about-text{
+        font-family: 'Lobster Two', cursive;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-size: 120%;
+        color: rgb(2, 0, 0);
+        margin-right: 8%;
+        margin-left: 8%;
+        margin-top: -2%;
+        
+    }
+
 #home #edy_back
 {
+    width:25%;
     margin-top: 30%;
     margin-right: -48%;
     
@@ -11,13 +32,15 @@
 
 #home #oly_back
 {
+    width:25%;
     margin-top: 7%;
-    margin-right: -65%;
+    margin-right: -50%;
     
 }
 #home #teo_back
 {
-    margin-right: 38%;
+    width:20%;
+    margin-right: 30%;
 
 }
 #edy{
@@ -136,7 +159,7 @@
 #algoritm #algoritm-titlu
 {
     text-align: center;
-    font-size: 350%;
+    font-size: 300%;
     color: rgb(2, 0, 0);
     font-family: 'Indie Flower', cursive;
     padding-top: 5%;
@@ -150,7 +173,7 @@
     font-family: 'Salsa', cursive;
     margin-left: 15%;
     margin-right: 5%;
-    font-size: 100%;
+    font-size: 80%;
     font-weight: bold;
     
 }
@@ -159,7 +182,7 @@
     font-family: 'Salsa', cursive;
     margin-left: 17%;
     margin-right: 5%;
-    font-size: 100%;
+    font-size: 80%;
     font-weight: bold;
     margin-bottom: 2%;
 }
@@ -329,6 +352,7 @@ margin-top: 1%
 
 #home #edy_back
 {
+    
     margin-top: 130%;
     margin-right: -50%;
 }
