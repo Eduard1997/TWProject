@@ -1,0 +1,10 @@
+Profesie: student
+Nume: da
+User: da
+Parola: da
+
+Profesie: profesor
+Nume: da
+User: da
+Parola: da
+
