@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(42, 80, 204);
+}
+
+#Prezenta{
+    display: inline-block;
+    margin-left:18%;
+}
+
+#Activitate{
+    display: inline-block;
+    margin-left:7%;
+    
+}
+#Proiect{
+    display: inline-block;
+    margin-left:6%;
+    
+}
+#Test{
+    display: inline-block;
+    margin-left:8%;
+    
+}
+#Total{
+    display: inline-block;
+    margin-left: 11%;
+}
+#toate{
+    font-size: 40px;
+}
+
+input{
+    display: inline-block;
+    margin-top: -40px;
+    padding-top: 0%;
+    margin-bottom: 20px;
+    width:16%;
+    height:40px;
+    
+}
+
+#primacasuta{
+    margin-left: 16%;
+}
+
+#nume{
+    
+    display: inline-block;
+    margin-top:0px;
+    width: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+
+    
+
+}

@@ -3,10 +3,63 @@
 <head>
     
     <meta charset="utf-8" />
-    <title>Profesor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="./profesorStyle.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Croissant+One|Sancreek" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+    <title>Professor page</title>
     
 </head>
 <body>
-    <h1>Salutare profesore!</h1>
+    <img src="prof_back.jpg" id="poza">
+    <h1 id="nume"><center>Ciobi Iobi</center></h1>
+    <center><h2 id="situatie">Administrarea situatiei studentilor</h2></center>
+    <div class="selectare slate mutare">
+        <select id="select1">
+            <option>Semian</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select>
+        </div>
+        <div class="selectare slate">
+        <select id="select2">
+                <option>Grupa</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <div class="selectare slate">
+            <select id="select3">
+                    <option>Saptamana</option>
+                    <option value="s1">1</option>
+                    <option value="s2">2</option>
+                    <option value="s3">3</option>
+                    <option value="s4">4</option>
+                    <option value="s5">5</option>
+                    <option value="s6">6</option>
+                    <option value="s7">7</option>
+                    <option value="s8">8</option>
+                    <option value="s9">9</option>
+                </select>
+            </div>
+        <button id="clickMe" type="button" onclick="myFunction()">Administreaza</button>
+    
+    
+
+    <script>
+        function myFunction(){
+            if(document.getElementById('mySelect').value == "sarmale"){
+                window.open("student.html");
+            }
+
+        }
+    </script>
 </body>
 </html>

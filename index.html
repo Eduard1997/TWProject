@@ -3,13 +3,15 @@
 <html>
 
 <head>
-
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster+Two" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<link rel='stylesheet' type='text/css' href="./style.css" media="all">
+	<!--
 		<link rel='stylesheet' type='text/css' href="./responsive.css" media="all">
+	-->
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:400i" rel="stylesheet">
 	<title>eStudy</title>
 	<meta charset="UTF-8">
@@ -17,7 +19,7 @@
 
 <body>
 		
-	<header>
+	<header id="PC">
 		<nav class="meniu">
 			<a href="#home"><b>Acasă</b></a>
 			<a href="#about"><b>Despre noi</b></a>
@@ -28,6 +30,11 @@
 		</nav>
 		
 	</header>
+<header id="resp">
+		<nav class="menu__button"> <button type="button"> Menu </button>
+</nav>
+</header>
+
 	
 	<section id="home">
 		 <img id="teo_back" src="teo_back.png" align="right">
@@ -49,47 +56,15 @@
 
 	<section id="logIn">
 
-		<div style="width: 100%;">
-			<div style="float:left;" class="margin-cont">
-
-				<h1>Creare cont</h1>
-
-				<form method="POST" action="formular.php">
-				<label><input type="radio" name="student">Student</label>
-				<label><input type="radio" name="profesor">Profesor</label>
-					<div>
-						<h2>Numele tău</h2>
-						<p>
-							<input id = "chenar-nume" class="chenar" type="text" placeholder="Pinguinescu L. Tuxy" name="nume" required>
-							<span class="error">*</span>
-						</p>
-					</div>
-
-					<div>
-						<h2>User</h2>
-						<p>
-							<input id = "chenar-user" class="chenar" type="text" placeholder="Pinguinescu L. Tuxy" name="user" required>
-							<span class="error">*</span>
-						</p>
-					</div>
-
-					<div>
-						<h2>Password</h2>
-						<p>
-							<input class="chenar" type="password" placeholder="Pinguinescu L. Tuxy" name="password" required>
-							<span class="error">*</span>
-						</p>
-					</div>
-					
-					<input id="buton" class="submitButton" type="submit" value="Submit" target="top" name="submit">
-				</form>
-			</div>
-			<div style="float: right;" class="margin-logIn">
+		
+			<div class="margin-logIn">
 				<h1>Log in</h1>
 				<br/>
 				<br/>
-				
 				<div class="logo">
+						<div>
+								<img id = "anonim" src="./anonymous.png" alt="anonym" onclick="anonim()">
+							</div>
 					<img id = "student" src="./student.png" alt="student" onclick="document.getElementById('id01').style.display='block'">
 					<div id="id01" class="modal">
   
@@ -115,7 +90,7 @@
 							  </div>
 							</form>
 						  </div>
-					<img id = "student" src="profesor.png" alt="profesor" onclick="document.getElementById('id02').style.display='block'">
+					<img class = "prof" src="profesor.png" alt="profesor" onclick="document.getElementById('id02').style.display='block'">
 					<div id="id02" class="modal">
   
 							<form class="modal-content animate" action="/action_page.php">
@@ -204,6 +179,19 @@
 			}
 		}
 		</script>
+
+<script>
+	if(document.getElementById("stud").checked){
+		document.getElementById("grupa").style.display = block;
+		
+	}
+</script>
+
+<script>
+	function anonim(){
+		window.open("https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html");
+	}
+</script>
 </body>
 
 </html>

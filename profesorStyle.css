@@ -1,0 +1,112 @@
+body,html{
+    width: 99%;
+}
+
+#poza{
+    width: 100%;
+    height: 100%;
+   position: fixed;
+   right: 0;
+   top:0;
+}
+
+#nume{
+    position: relative;
+    
+    font-family: 'Sancreek', cursive;
+    font-family: 'Croissant One', cursive;
+    text-shadow: -4px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: rgb(3, 3, 3);
+    font-size: 400%;
+}
+#clickMe{
+    position: relative;
+    top: -130px;
+    right: -10px;
+    background:    linear-gradient(#23a9e7, #000000);
+    border:        1px solid #000000;
+    border-radius: 5px;
+    padding:       8px 20px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal 700 20px/1 "Komika", cursive;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+    
+ }
+#profil{
+    position: absolute;
+    top: 35%;
+    left: 48px;
+    background:    linear-gradient(#23a9e7, #000000);
+    border:        1px solid #000000;
+    border-radius: 5px;
+    padding:       8px 20px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal 700 20px/1 "Komika", cursive;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+}
+
+#profesor{
+    position: relative;
+}
+
+#situatie{
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    font-family: 'Denk One', sans-serif;
+    bottom: 120px;
+    font-size: 35px;
+}
+
+
+
+.selectare select{
+   background-color:rgb(255, 255, 255, 0.4);
+   color: rgb(3, 2, 2, 1);
+   font-weight: bold;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+   
+}
+
+.selectare{
+    display: inline-block;
+    margin-top: 11%;
+    position: relative;
+    bottom: 120px;
+    background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+    height: 29px;
+    overflow: hidden;
+    width: 240px;
+    opacity: 1;
+}
+
+.selectare.slate{
+   background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+   height: 34px;
+   width: 240px;
+   border: 2px solid rgb(7, 0, 0);
+   opacity: 1;
+}
+
+.selectare.slate select {
+    border: 1px solid rgb(7, 0, 0);
+    font-size: 16px;
+    height: 34px;
+    width: 268px;
+ }
+ .mutare{
+     display: inline-block;
+     margin-left: 15%;
+ }
+
+ 
+
+
+
