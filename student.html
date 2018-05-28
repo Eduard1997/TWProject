@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' href="./studentStyle.css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href="./sStyle.css" media="all">
     <title>Student page</title>
-    
+
 </head>
-<body>
+<body onload="setName()">
+
     <img src="student_back.jpg" id="poza">
-    <h1 id="nume"><center>Popescu Georgel</center></h1>
+
+    <center><h1 id="nume"></h1></center>
+    <button><a href="index.html" >><img src="BackButton.png" id="back"></a></button>
     <nav class="cursuri">
         <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web01ArhitecturaWeb.pdf"><b>Curs1</b></a>
         <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web02ProgramareWeb-HTTP-CGI.pdf"><b>Curs2</b></a>
         <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web04DezvoltareaAplicatiilorWeb-InginerieWeb.pdf"><b>Curs3</b></a>
         <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web05DezvoltareaAplicatiilorWeb-PHP.pdf"><b>Curs4</b></a>
         <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web05DezvoltareaAplicatiilorWeb-PHP.pdf"><b>Curs5</b></a>
-        <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week6"><b>Curs6</b></a>	
+        <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week6"><b>Curs6</b></a>
         <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web07ModelareXML-XPath-ValidariXML-DTD.pdf"><b>Curs7</b></a>
         <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/projects/xml-transform.php?pag=projects"><b>Proiect</b></a>
-        <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web08ProcesariXML-DOM.pdf"><b>Curs8</b></a>	
+        <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web08ProcesariXML-DOM.pdf"><b>Curs8</b></a>
         <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web08ProcesariXML-DOM.pdf"><b>Curs9</b></a>
     </nav>
     <h2 id="activitate">Activitate externa</h2>
     <br/>
     <img id="facebook" src="facebook.png">
     <div id="login">
-    <a href="ceva"  style="text-decoration: none;">Login facebook </a> 
+    <a href="ceva"  style="text-decoration: none;">Login facebook </a>
     <button id="facebook-activity">10</button>
     </div>
-    <br/> 
+    <br/>
     <img id="github" src="github.png">
     <div id="login1">
     <a href="ceva" style="text-decoration: none;">Login github</a>
-    <button id="github-activity">10</button> 
+    <button id="github-activity">10</button>
     </div>
     <h2 id="situatie">Situatie scolara</h2>
 
@@ -120,5 +124,43 @@
     <p>link</p>
     <p>link</p>
 </div>
+<button type="button" class="logout" id="logout" style="position: relative; margin-left:10%" onclick="logout()">Log out</button>
+<script>
+function getCookieName() {
+    var name = "name" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+<script>
+function setName(){
+
+  var name = getCookieName();
+  var numeBun = name.replace('+','  ');
+
+  var studName = document.getElementById("nume");
+  studName.innerHTML = numeBun;
+  console.log(numeBun);
+}
+</script>
+
+<script>
+function logout(){
+  document.cookie = "username" + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.cookie = "password" + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.cookie = "name" + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  window.open("index.html","_self");
+}
+</script>
 </body>
 </html>

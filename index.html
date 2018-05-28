@@ -3,7 +3,7 @@
 <html>
 
 <head>
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster+Two" rel="stylesheet">
@@ -18,25 +18,25 @@
 	<meta charset="UTF-8">
 </head>
 
-<body>
-		
+<body onload="setLogin()">
+
 	<header id="PC">
 		<nav class="meniu">
 			<a href="#home"><b>Acasă</b></a>
 			<a href="#about"><b>Despre noi</b></a>
 			<a href="#logIn"><b>LogIn</b></a>
-			<a href="#algoritm"><b>Algoritm note</b></a>	
+			<a href="#algoritm"><b>Algoritm note</b></a>
 			<a href="#contact"><b>Contactează-ne</b></a>
 			<img id = "logo" src="Logo1.png" align="right">
 		</nav>
-		
+
 	</header>
 <header id="resp">
 		<nav class="menu__button"> <button type="button"> Menu </button>
 </nav>
 </header>
 
-	
+
 	<section id="home">
 		 <img id="teo_back" src="teo_back.png" align="right">
 		 <img id="oly_back" src="oly_back.png" align="right">
@@ -46,18 +46,18 @@
 	<img id="teo" src="teo.png">
 		<h1 id="about-title" style="text-align:center;">Despre noi</h1>
 		<img id="edy" src="edy.jpg">
-		<h2 id="about-text" >Suntem o echipă de studenți dedicați de la Facultatea de Informatică din Iași și am colaborat la acest proiect 
+		<h2 id="about-text" >Suntem o echipă de studenți dedicați de la Facultatea de Informatică din Iași și am colaborat la acest proiect
 			pentru a vă spori șansele de reușită în cadrul disciplinei <em>Tehnologii Veb</em> prin implementarea unor algoritmi care să vă țină mereu la curent cu
 			situația dumneavoastră.
 		</h2>
-		
+
 		<img id="oly" src="oly.jpg" align="center">
-		
+
 	</section>
 
 	<section id="logIn">
 
-		
+
 			<div class="margin-logIn">
 				<h1>Log in</h1>
 				<br/>
@@ -66,58 +66,70 @@
 						<div>
 								<img id = "anonim" src="./anonymous.png" alt="anonym" onclick="anonim()">
 							</div>
-					<img id = "student" src="./student.png" alt="student" onclick="document.getElementById('id01').style.display='block'">
+					<img id = "student" src="./student.png" alt="student" onclick="autolog2()">
 					<div id="id01" class="modal">
-  
-							<form class="modal-content animate">
+
+							<form class="modal-content animate" action="studentAuth.php" method="post">
 							  <div class="imgcontainer">
 								<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 								<img src="student.png" alt="Avatar" class="avatar">
 							  </div>
-						  
+
 							  <div class="container">
 								<label for="uname" style="color:black"><b>Username</b></label>
-								<input type="text" placeholder="Enter Username" name="uname" required>
-						  
+								<input type="text" id="user" placeholder="Enter Username" name="studUsername"  required >
+
 								<label for="psw" style="color:black"><b>Password</b></label>
-								<input type="password" placeholder="Enter Password" name="psw" required>
-								  
-								<a href="student.html" target="_blank"><button type="button">Login</button></a>
-								
+								<input type="password" id="pass" placeholder="Enter Password" name="studPassword"  required>
+
+								<input type="checkbox" name="rememberMe">
+
+								<label for="rememberMe">Remember me</label>
+								<br>
+								<button type="submit">Login</button>
+
+
+
+
 							  </div>
-						  
+
 							  <div class="container" style="background-color:#f1f1f1">
 								<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><b>Cancel</b></button>
 							  </div>
 							</form>
 						  </div>
-					<img class = "prof" src="profesor.png" alt="profesor" onclick="document.getElementById('id02').style.display='block'">
+
+					<img class = "prof" src="profesor.png" alt="profesor" onclick="autoLog()">
 					<div id="id02" class="modal">
-  
-							<form class="modal-content animate" action="/action_page.php">
+								<form class="modal-content animate" action="profAuth.php" method="post">
+
 							  <div class="imgcontainer">
 								<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
 								<img src="profesor.png" alt="Avatar" class="avatar">
 							  </div>
-						  
+
 							  <div class="container">
 								<label for="uname" style="color:black"><b>Username</b></label>
-								<input type="text" placeholder="Enter Username" name="uname" required>
-						  
+								<input type="text" placeholder="Enter Username" name="profUser" id="puser" required>
+
 								<label for="psw" style="color:black"><b>Password</b></label>
-								<input type="password" placeholder="Enter Password" name="psw" required>
-								  
-								<a href="profesor.html" target="_blank"><button type="button">Login</button></a>
-								
+								<input type="password" placeholder="Enter Password" name="profPass" id="ppass" required>
+								<input type="checkbox" name="rememberMeProf">
+
+								<label for="rememberMeProf">Remember me</label>
+								<br>
+								<button type="submit">Login</button>
+
+
 							  </div>
-						  
+
 							  <div class="container" style="background-color:#f1f1f1">
 								<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn"><b>Cancel</b></button>
 							  </div>
 							</form>
 						  </div>
 				</div>
-			
+
 			</div>
 		</div>
 		<div style="clear:both"></div>
@@ -137,30 +149,30 @@
 			</ul>
 			<p><b>PF</b> = <b>P</b> * 0.4 + <b>CF</b> * 0.3 + <b>Pr</b> * 0.1 + <b>A</b> * 0.1 + <b>T</b> * 0.1,  în care <b>T</b> = sum(<b>Ti</b> : i =(1, 2, 3)).</p>
 			<p>Pentru a promova, fiecare student trebuie să obţină minim 10 puncte la Pr, 5 puncte la P, CF, A și T. Informațiile vor putea fi partajate pe diverse rețele sociale.</p>
-			</div>	
+			</div>
 </section>
 
 <section id="contact">
 		 <h2>Contactează-ne</h2>
-		 
+
 	<form action="sendmail.php" method="POST">
 		<input id="casuta"type="text" placeholder="Numele și prenumele dumnveastră" name="name"><br/>
 		<input id="casuta" type="email" placeholder="Email-ul dumnveastră" name="email"><br/>
 		<input id="casuta" type="text" placeholder="Numărul de telefon" name="telefon"><br/>
-		<textarea id="mesaj" type="text" placeholder="Write something.." name="mesaj"></textarea> 
+		<textarea id="mesaj" type="text" placeholder="Write something.." name="mesaj"></textarea>
 		<br>
 		<input type="submit" class="contact-button">
 	</form>
 		 <img id="teo-contact" src="teo_contact.png" align="right">
 		 <img id="edy-contact" src="edy_contact.png" align="right">
 		 <img id="oly-contact" src="oly_contact.png" align="right">
-	  
+
 </section>
 
 <script>
 		// Get the modal
 		var modal = document.getElementById('id01');
-		
+
 		// When the user clicks anywhere outside of the modal, close it
 		window.onclick = function(event) {
 			if (event.target == modal) {
@@ -172,7 +184,7 @@
 <script>
 		// Get the modal
 		var modal = document.getElementById('id02');
-		
+
 		// When the user clicks anywhere outside of the modal, close it
 		window.onclick = function(event) {
 			if (event.target == modal) {
@@ -181,18 +193,183 @@
 		}
 		</script>
 
-<script>
-	if(document.getElementById("stud").checked){
-		document.getElementById("grupa").style.display = block;
-		
-	}
-</script>
+
 
 <script>
 	function anonim(){
 		window.open("https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html");
 	}
 </script>
+<script>
+function functie(){
+	var x = getCookieUser();
+	var y = getCookiePass();
+	var z = getCookieName();
+	alert(x+y+z);
+}
+</script>
+<script>
+function getCookieUser() {
+    var name = "username" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+<script>
+function getCookieName() {
+    var name = "name" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+<script>
+function getCookiePass() {
+    var name = "password" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+
+
+<script>
+function getProfCookieUser() {
+    var name = "Profusername" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+<script>
+function getProfCookieName() {
+    var name = "Profname" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+<script>
+function getProfCookiePass() {
+    var name = "Profpassword" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+
+<script>
+function setLogin(){
+	var user = getCookieUser();
+	var pass = getCookiePass();
+	var name = getCookieName();
+
+	var puser = getProfCookieUser();
+	var ppass = getProfCookiePass();
+	var pname = getProfCookieName();
+	var userForm = document.getElementById("user");
+	var userPass = document.getElementById("pass");
+	if(user != null){
+		userForm.value = user;
+	}
+	if(pass != null){
+		userPass.value = pass;
+	}
+
+	var puserForm = document.getElementById("puser");
+	var puserPass = document.getElementById("ppass");
+	if(puser != null){
+		puserForm.value = puser;
+	}
+	if(ppass != null){
+		puserPass.value = ppass;
+	}
+
+
+}
+</script>
+<script>
+function autoLog(){
+	var x = getProfCookieUser();
+	var y = getProfCookiePass();
+	if(x.length > 1 && y.length > 1){
+		window.open("profesor.html", "_self");
+	} else{
+		document.getElementById('id02').style.display='block';
+	}
+
+}
+</script>
+
+<script>
+function autolog2(){
+	var a = getCookieUser();
+	var b = getCookiePass();
+	if(a.length > 1 && b.length > 1){
+		window.open("student.html", "_self");
+	} else{
+		document.getElementById('id01').style.display='block';
+	}
+}
+
+</script>
+
+
 </body>
 
 </html>

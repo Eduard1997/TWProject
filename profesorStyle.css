@@ -12,7 +12,6 @@ body,html{
 
 #nume{
     position: relative;
-    
     font-family: 'Sancreek', cursive;
     font-family: 'Croissant One', cursive;
     text-shadow: -4px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -21,7 +20,7 @@ body,html{
 }
 #clickMe{
     position: relative;
-    top: -130px;
+    top: -210px;
     right: -10px;
     background:    linear-gradient(#23a9e7, #000000);
     border:        1px solid #000000;
@@ -32,8 +31,22 @@ body,html{
     font:          normal 700 20px/1 "Komika", cursive;
     text-align:    center;
     text-shadow:   1px 1px #000000;
-    
+
  }
+ #logOutS{
+     position: absolute;
+     margin-left: 90%;
+     background:    linear-gradient(#23a9e7, #000000);
+     border:        1px solid #000000;
+     border-radius: 5px;
+     padding:       8px 20px;
+     color:         #ffffff;
+     display:       inline-block;
+     font:          normal 700 20px/1 "Komika", cursive;
+     text-align:    center;
+     text-shadow:   1px 1px #000000;
+
+  }
 #profil{
     position: absolute;
     top: 35%;
@@ -72,7 +85,7 @@ body,html{
    height: 29px;
    padding: 5px; /* If you add too much padding here, the options won't show in IE */
    width: 268px;
-   
+
 }
 
 .selectare{
@@ -102,11 +115,299 @@ body,html{
     width: 268px;
  }
  .mutare{
-     display: inline-block;
-     margin-left: 15%;
+
+     display: block;
+     margin-left: 300px;
+     margin-top:35px;
+
  }
 
- 
+ .move-select2{
+     display: block;
+     margin-left: 40%;
+     margin-top: -17px;
+     margin-left: 500px;
+ }
+ .move-select3{
+     display: block;
+     margin-left: 760px;
+     margin-top: -17px;
+
+ }
+ #logOutS {
+   position: relative;
+ }
+
+ #clickMe{
+     display: block;
+     margin-left: 1000px;
+     margin-top: 33px;
+ }
+
+ @media screen and (min-width: 360px) and (max-height: 640px) {
+     #nume{
+         font-size: 50px;
+         left: -15px;
+     }
+
+     #situatie{
+         font-size: 30px;
+         top: -60px;
+         left: -17px;
+     }
+
+     .mutare{
+
+         top: -100px;
+     }
+
+     .move-select2{
+         position: relative;
+         left: 53px;
+
+     }
+
+     .move-select3{
+         position: relative;
+         left:53px;
+         bottom: 140px;
+     }
+
+     #clickMe{
+         position: relative;
+         left: 85px;
+     }
+ }
 
 
+ @media screen and (min-width: 411px){
+    #situatie{
 
+        top: -70px;
+        left: -3px;
+    }
+    .mutare{
+
+        top: -100px;
+        left: 10px;
+    }
+    .move-select2{
+        position: relative;
+        left: 70px;
+
+    }
+
+    .move-select3{
+        position: relative;
+        left: 70px;
+        bottom: 140px;
+    }
+
+    #clickMe{
+        position: relative;
+        left: 103px;
+    }
+ }
+
+ @media screen and (max-width: 320px){
+    #nume{
+        font-size: 50px;
+    }
+    #situatie{
+
+        font-size: 30px;
+        top: -50px;
+        left: -3px;
+    }
+    .mutare{
+
+        top: -100px;
+        left: -15px;
+    }
+    .move-select2{
+        position: relative;
+        left: 33px;
+
+    }
+
+    .move-select3{
+        position: relative;
+        left: 34px;
+        bottom: 140px;
+    }
+
+    #clickMe{
+        position: relative;
+        left: 65px;
+    }
+
+}
+
+@media only screen and (min-width : 375px) and (max-width : 667px){
+    #situatie{
+        font-size: 30px;
+        top: -50px;
+        left: -3px;
+    }
+
+    .mutare{
+        position: relative;
+        top: -100px;
+        left: -15px;
+    }
+    .move-select2{
+        position: relative;
+        left: 40px;
+
+    }
+
+    .move-select3{
+        position: relative;
+        left: 40px;
+        bottom: 140px;
+    }
+
+    #clickMe{
+        position: relative;
+        left: 75px;
+    }
+
+}
+
+@media only screen and (min-width : 414px) and (max-width : 736px){
+    .mutare{
+        position: relative;
+        top: -100px;
+        left: 10px;
+    }
+    .move-select2{
+        position: relative;
+        left: 71px;
+
+    }
+
+    .move-select3{
+        position: relative;
+        left: 71px;
+        bottom: 140px;
+    }
+
+    #clickMe{
+        position: relative;
+        left: 105px;
+    }
+
+}
+
+@media screen and (max-width: 680px) and (orientation:landscape){
+    #nume{
+        margin-top: 10px;
+    }
+    .mutare{
+        position: relative;
+        top: -75px;
+        left: 79px;
+    }
+    .move-select2{
+        position: relative;
+        left: -170px;
+
+    }
+
+    .move-select3{
+        position: relative;
+        left: 173px;
+        bottom: 160px;
+
+    }
+
+    #clickMe{
+
+        margin-top:100px;
+        margin-left:-150px;
+
+    }
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.77) and (orientation:landscape) and (min-width:731px){
+    .mutare{
+        position: relative;
+        top: -90px;
+        left: 98px;
+    }
+    .move-select2{
+        position: relative;
+        left: -150px;
+        top: -150px;
+
+    }
+
+    .move-select3{
+        position: relative;
+        left: 206px;
+        bottom: 160px;
+
+    }
+
+    #clickMe{
+
+        margin-top:100px;
+        margin-left:-113px;
+
+    }
+}
+
+@media only screen and (min-width : 320px)and (max-width : 568px) and (orientation : landscape) {
+    #nume{
+        position: relative;
+        left: 50px;
+
+    }
+    #situatie{
+        font-size: 30px;
+        top: -50px;
+        left: 50px;
+    }
+    .mutare{
+        position: relative;
+        top: -115px;
+        left: 120px;
+    }
+    .move-select2{
+        position: relative;
+        left: 204px;
+        top: -110px;
+
+    }
+
+    .move-select3{
+        position: relative;
+        left: -45px;
+        bottom: 160px;
+
+    }
+
+    #clickMe{
+
+        margin-top:20px;
+        margin-left:130px;
+
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape){
+    .move-select3{
+        position: relative;
+        left: 174px;
+        bottom: 160px;
+
+    }
+
+    #clickMe{
+
+        margin-top:99px;
+        margin-left:-150px;
+
+    }
+ }

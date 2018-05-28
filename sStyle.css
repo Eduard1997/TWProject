@@ -1,0 +1,42 @@
+
+#back
+{
+    position: relative;
+    display: inline-block;
+    margin-top:-20%;
+    margin-left: 10%;
+    margin-bottom: 20%;
+    width: 20%;
+}
+#back:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.logout {
+  
+  display: inline-block;
+  background: #5bd632;
+  background-image: -webkit-linear-gradient(top, #5bd632, #11240a);
+  background-image: -moz-linear-gradient(top, #5bd632, #11240a);
+  background-image: -ms-linear-gradient(top, #5bd632, #11240a);
+  background-image: -o-linear-gradient(top, #5bd632, #11240a);
+  background-image: linear-gradient(to bottom, #5bd632, #11240a);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 26px;
+  padding: 9px 19px 10px 20px;
+  text-decoration: none;
+}
+
+.logout:hover {
+  background: #a3fc3c;
+  background-image: -webkit-linear-gradient(top, #a3fc3c, #263613);
+  background-image: -moz-linear-gradient(top, #a3fc3c, #263613);
+  background-image: -ms-linear-gradient(top, #a3fc3c, #263613);
+  background-image: -o-linear-gradient(top, #a3fc3c, #263613);
+  background-image: linear-gradient(to bottom, #a3fc3c, #263613);
+  text-decoration: none;
+}

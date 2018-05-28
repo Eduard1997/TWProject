@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' href="./profesorStyle.css" media="all">
+<link rel='stylesheet' type='text/css' href="./pstyle.css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Croissant+One|Sancreek" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+
     <title>Professor page</title>
-    
+
 </head>
-<body>
+<body onload="setName()">
     <img src="prof_back.jpg" id="poza">
-    <h1 id="nume"><center>Ciobi Iobi</center></h1>
+    <button id="logOutS"  onclick="logout()">log out </button>
+    <center><h1 id="nume"></h1></center>
     <center><h2 id="situatie">Administrarea situatiei studentilor</h2></center>
     <div class="selectare slate mutare">
         <select id="select1">
@@ -23,7 +26,7 @@
             <option value="B">B</option>
         </select>
         </div>
-        <div class="selectare slate">
+        <div class="selectare slate move-select2">
         <select id="select2">
                 <option>Grupa</option>
                 <option value="1">1</option>
@@ -35,7 +38,7 @@
                 <option value="7">7</option>
             </select>
         </div>
-        <div class="selectare slate">
+        <div class="selectare slate move-select3">
             <select id="select3">
                     <option>Saptamana</option>
                     <option value="s1">1</option>
@@ -49,9 +52,11 @@
                     <option value="s9">9</option>
                 </select>
             </div>
-        <button id="clickMe" type="button" onclick="myFunction()">Administreaza</button>
-    
-    
+        <a href="grupa1.html"><button id="clickMe" type="button" onclick="myFunction()">Administreaza</button></a>
+
+<br>
+
+
 
     <script>
         function myFunction(){
@@ -61,5 +66,43 @@
 
         }
     </script>
+    <script>
+    function getProfCookieName() {
+        var name = "Profname" + "=";
+    		var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+    </script>
+    <script>
+    function setName(){
+
+      var name = getProfCookieName();
+      var numeBun = name.replace('+','  ');
+
+      var profName = document.getElementById("nume");
+      profName.innerHTML = numeBun;
+      console.log(numeBun);
+    }
+    </script>
+<script>
+function logout(){
+  document.cookie = "Profusername" + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.cookie = "Profpassword" + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.cookie = "Profname" + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  window.open("index.html","_self");
+
+}
+</script>
+
 </body>
 </html>
