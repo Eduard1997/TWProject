@@ -13,32 +13,76 @@
             <p id="Test">Test</p>
             <p id="Total">Total</p>
         </div>
-        <p id="nume">Shaormel</p>
-        <input type="text" name="prezenta" id="primacasuta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
-        <p id="nume">Shaormel</p>
-        <input type="text" name="prezenta" id="primacasuta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
-        <p id="nume">Shaormel</p>
-        <input type="text" name="prezenta" id="primacasuta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
-        <p id="nume">Shaormel</p>
-        <input type="text" name="prezenta" id="primacasuta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
-        <input type="text" name="prezenta"></input>
+        <div id="om">
 
+      </div>
     </form>
+
+    <div id="dvImportSegments" class="fileupload ">
+    <fieldset>
+        <legend>Upload your CSV File</legend>
+            <input type="file" name="File Upload" id="txtFileUpload" accept=".csv" />
+            <br/>
+            <button onclick="myUpload()">Upload</button>
+
+
+   </fieldset>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+    // The event listener for the file upload
+    document.getElementById('txtFileUpload').addEventListener('change', upload, false);
+
+    // Method that checks that the browser supports the HTML5 File API
+    function browserSupportFileUpload() {
+        var isCompatible = false;
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+        isCompatible = true;
+        }
+        return isCompatible;
+    }
+
+    // Method that reads and processes the selected file
+    function upload(evt) {
+        if (!browserSupportFileUpload()) {
+            alert('The File APIs are not fully supported in this browser!');
+            } else {
+                var data = null;
+                var file = evt.target.files[0];
+                var reader = new FileReader();
+                reader.readAsText(file);
+                reader.onload = function(event) {
+                    var csvData = event.target.result;
+                    data = $.csv.toArrays(csvData);
+                    if (data && data.length > 0) {
+                      alert('Imported -' + data.length + '- rows successfully!');
+                    } else {
+                        alert('No data to import!');
+                    }
+                };
+                reader.onerror = function() {
+                    alert('Unable to read ' + file.fileName);
+                };
+            }
+        }
+
+});
+
+
+function myUpload() {
+  var inp = document.getElementById('txtFileUpload');
+
+  console.log(inp.file[0]);
+}
+
+</script>
+
 </body>
 
 </html>

@@ -10,17 +10,17 @@ body{
 #Activitate{
     display: inline-block;
     margin-left:7%;
-    
+
 }
 #Proiect{
     display: inline-block;
     margin-left:6%;
-    
+
 }
 #Test{
     display: inline-block;
     margin-left:8%;
-    
+
 }
 #Total{
     display: inline-block;
@@ -37,7 +37,7 @@ input{
     margin-bottom: 20px;
     width:16%;
     height:40px;
-    
+
 }
 
 #primacasuta{
@@ -45,7 +45,7 @@ input{
 }
 
 #nume{
-    
+
     display: inline-block;
     margin-top:0px;
     width: 10px;
@@ -54,6 +54,16 @@ input{
     color: black;
     font-weight: bold;
 
-    
 
+
+}
+p{
+  position: relative;
+  display: inline-block;
+  margin-top:0px;
+  width: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
 }
