@@ -1,6 +1,6 @@
 <script>
 function redirect(){
-  let url = "student.html";
+  let url = "displayGrades.php";
   window.open(url,"_self");
 }
 </script>

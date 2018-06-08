@@ -1,88 +1,123 @@
-<!DOCTYPE html>
-<html>
-    <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel='stylesheet' type='text/css' href="./grupa1.css" media="all">
-    </head>
-<body>
-    <form method="POST">
-        <div id="toate">
-            <p id="Prezenta">Prezenta</p>
-            <p id="Activitate">Activitate</p>
-            <p id="Proiect">Proiect</p>
-            <p id="Test">Test</p>
-            <p id="Total">Total</p>
-        </div>
-        <div id="om">
+  <!DOCTYPE html>
+  <html>
+      <head>
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link rel='stylesheet' type='text/css' href="./grup.css" media="all">
+              <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+              <script src="PapaParse-4.4.0/papaparse.min.js"></script>
+              <link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
+              <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+              <link href="https://fonts.googleapis.com/css?family=Croissant+One|Sancreek" rel="stylesheet">
+              <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
 
-      </div>
-    </form>
+     <script>
+      $(document).ready(function(){
 
-    <div id="dvImportSegments" class="fileupload ">
-    <fieldset>
-        <legend>Upload your CSV File</legend>
-            <input type="file" name="File Upload" id="txtFileUpload" accept=".csv" />
-            <br/>
-            <button onclick="myUpload()">Upload</button>
+          $("#submitbutton").click(function(){
+              var myfile = $("#csvfile")[0].files[0];
+              var json = Papa.parse(myfile,
+                  {
+                  header: true,
+                  skipEmptyLines: true,
+                  complete: function(results) {
+                      console.log("Dataframe:", JSON.stringify(results.data));
+                      console.log("Column names:", results.meta.fields);
+                      console.log("Errors:", results.errors);
+                      for(let i = 0; i< results.data.length; i++){
+                      let names = document.getElementsByClassName('nume');
+                      let prezenta  = results.data[i].Prezenta;
+                      let activitate = results.data[i].Activitate;
+                      let proiect = results.data[i].Proiect;
+                      let test = results.data[i].Test;
+                      let total = results.data[i].Total;
+                      for(let j = 0; j< names.length; j++){
+                        if(names[j].innerHTML == results.data[i].Nume) {
+                          document.getElementsByName('prezenta')[j].value = prezenta;
+                          document.getElementsByName('activitate')[j].value = activitate;
+                          document.getElementsByName('proiect')[j].value = proiect;
+                          document.getElementsByName('test')[j].value = test;
+                          document.getElementsByName('total')[j].value = total;
+                        }
+                      }
 
+                      }
 
-   </fieldset>
-</div>
+                  }
+              });
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
+          })
+      })
 
-    // The event listener for the file upload
-    document.getElementById('txtFileUpload').addEventListener('change', upload, false);
+      function ajax_post(){
+        // console.log("am intrat in functie");
+    // Create our XMLHttpRequest object
+    var hr = new XMLHttpRequest();
+    // Create some variables we need to send to our PHP file
+    var url = "addGrades.php";
+    var nume = document.getElementsByClassName("nume");
+    var prezenta = document.getElementsByName("prezenta");
+    var activitate = document.getElementsByName("activitate");
+    var test = document.getElementsByName("test");
+    var proiect = document.getElementsByName("proiect");
+    var total = document.getElementsByName("total");
 
-    // Method that checks that the browser supports the HTML5 File API
-    function browserSupportFileUpload() {
-        var isCompatible = false;
-        if (window.File && window.FileReader && window.FileList && window.Blob) {
-        isCompatible = true;
+    var vars="";
+    for(var i=0; i<nume.length;i++)
+    {
+    vars = vars + nume[i].innerHTML+"\n"+prezenta[i].value + "\n"+activitate[i].value + "\n"+test[i].value + "\n"+proiect[i].value + "\n"+total[i].value + "\n";
+  }
+
+        hr.open("POST", url, true);
+        hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        hr.onreadystatechange = function() {
+          if(hr.readyState == 4 && hr.status == 200) {
+            var return_data = hr.responseText;
+          console.log(return_data);
+          }
         }
-        return isCompatible;
+      hr.send(vars);
+      console.log("processing...");
     }
 
-    // Method that reads and processes the selected file
-    function upload(evt) {
-        if (!browserSupportFileUpload()) {
-            alert('The File APIs are not fully supported in this browser!');
-            } else {
-                var data = null;
-                var file = evt.target.files[0];
-                var reader = new FileReader();
-                reader.readAsText(file);
-                reader.onload = function(event) {
-                    var csvData = event.target.result;
-                    data = $.csv.toArrays(csvData);
-                    if (data && data.length > 0) {
-                      alert('Imported -' + data.length + '- rows successfully!');
-                    } else {
-                        alert('No data to import!');
-                    }
-                };
-                reader.onerror = function() {
-                    alert('Unable to read ' + file.fileName);
-                };
-            }
-        }
-
-});
+      </script>
 
 
-function myUpload() {
-  var inp = document.getElementById('txtFileUpload');
 
-  console.log(inp.file[0]);
-}
+      </head>
+  <body>
 
-</script>
+        <!-- <form method="POST"> -->
+            <img src="grup.jpg" id="poza">
+          <div id="toate">
+              <p id="Prezenta">Prezenta</p>
+              <p id="Activitate">Activitate</p>
+              <p id="Proiect">Proiect</p>
+              <p id="Test">Test</p>
+              <p id="Total">Total</p>
+          </div>
 
-</body>
 
-</html>
+          <div id="om">
+
+        </div>
+
+      <!-- </form> -->
+
+  <input name="myBtn" type="submit" value="Submit Data" onclick="ajax_post();" id="adaug"> <br><br>
+      <div id="dvImportSegments" class="fileupload ">
+
+      <fieldset>
+          <legend>Upload your CSV File</legend>
+              <form name="foo" enctype="multipart/form-data" method="post">
+              <input type="file" name="File Upload" id="csvfile" accept=".csv" value = "i" />
+              <br/>
+              </form>
+              <button type = "button" id="submitbutton">Upload file</button>
+     </fieldset>
+
+  </div>
+
+
+  </body>
+
+  </html>

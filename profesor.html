@@ -19,7 +19,7 @@
     <button type="button" id="logOutS" style="position: relative; margin-left:90%; margin-top:5%;" onclick="logout2()">log out </button>
     <center><h1 id="nume"></h1></center>
     <center><h2 id="situatie">Administrarea situatiei studentilor</h2></center>
-    <form style="position:relative;" action="studentsPrint.php" method="post">
+    <form style="position:relative;" action="studentsPrint.php" method="post" id="formular">
       Semian:
       <input type="text" placeholder="A, B" name="semian">
       Grupa:
@@ -27,6 +27,7 @@
       Saptamana:
       <input type="number" placeholder="1,2,3,4,5,6,7,8,9,10,11,12,13,14" name="saptamana">
         <button id="clickMe" type="submit">Administreaza</button>
+
       </form>
 <br>
 
@@ -68,6 +69,27 @@ function logout2(){
 
 }
 
+var form = document.getElementById('formular');
+form.onsubmit = function(){
+  let semian= document.getElementsByName('semian')[0].value;
+    if (semian != 'A' && semian != 'B'){
+          alert('Oups: Semianul trebuie sa fie A sau B');
+          return false;
+    }
+
+    let grupa= document.getElementsByName('grupa')[0].value;
+      if(grupa < 1 || grupa > 5){
+            alert('Oups: Grupa trebuie sa fie intre 1 si 5');
+            return false;
+      }
+      let sapt= document.getElementsByName('saptamana')[0].value;
+      if(sapt<1 || sapt>13){
+            alert('Oups: saptamana trebuie sa fie intre 1 si 13');
+            return false;
+      }
+
+      return true;
+}
 
 </script>
 

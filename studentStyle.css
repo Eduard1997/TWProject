@@ -18,7 +18,7 @@ background-size: cover;
 
 }
 .logout {
-  
+
   background: #5bd632;
   background-image: -webkit-linear-gradient(top, #5bd632, #11240a);
   background-image: -moz-linear-gradient(top, #5bd632, #11240a);
@@ -185,8 +185,9 @@ td,th{
     position: relative;
     font-family: 'Denk One', sans-serif;
     float: right;
-    top: 150px;
-    left: 300px;
+    display: inline-block;
+    margin-top: 25%;
+    margin-right: -30%;
 }
 
 #prom{

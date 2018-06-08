@@ -1,13 +1,16 @@
-<script>
+<!-- <script>
 function redirect(){
   let url = "grupa1.html";
   window.open(url,"_self");
 }
-</script>
+</script> -->
 
 
 <?php
+session_start();
 include_once 'grupa1.html';
+$_SESSION['saptamana']=$_POST['saptamana'];
+
 $servername = "localhost";
 $username = "root";  //your user name for php my admin if in local most probaly it will be "root"
 $password = "";  //password probably it will be empty
@@ -33,15 +36,20 @@ if(isset($_POST['semian']) && isset($_POST['grupa']) && isset($_POST['saptamana'
   $linii = mysqli_num_rows($result);
 
   if($linii < 1){
-    echo "naspa, nik in BD";
+    echo "name is not in DB";
   } else{
     while ($row = mysqli_fetch_assoc($result)){
 
-      $ceva = $row["Name"];
+      $studName = $row["Name"];
+
+
       echo "
       <script>
-          var node = document.createElement('p');                 // Create a <li> node
-          var textnode = document.createTextNode('$ceva');         // Create a text node
+          var node = document.createElement('p');
+          var spatiu = document.createElement('br');
+          node.setAttribute('class' , 'nume');
+          var textnode = document.createTextNode('$studName');
+          document.getElementById('om').appendChild(spatiu);         // Create a text node
           node.appendChild(textnode);                              // Append the text to <li>
           document.getElementById('om').appendChild(node);
           var prezenta = document.createElement('INPUT');
@@ -52,22 +60,22 @@ if(isset($_POST['semian']) && isset($_POST['grupa']) && isset($_POST['saptamana'
 
           var activitate = document.createElement('INPUT');
           activitate.setAttribute('type','text');
-          activitate.setAttribute('name','prezenta');
+          activitate.setAttribute('name','activitate');
           document.getElementById('om').appendChild(activitate);
 
           var proiect = document.createElement('INPUT');
           proiect.setAttribute('type','text');
-          proiect.setAttribute('name','prezenta');
+          proiect.setAttribute('name','proiect');
           document.getElementById('om').appendChild(proiect);
 
           var test = document.createElement('INPUT');
           test.setAttribute('type','text');
-          test.setAttribute('name','prezenta');
+          test.setAttribute('name','test');
           document.getElementById('om').appendChild(test);
 
           var total = document.createElement('INPUT');
           total.setAttribute('type','text');
-          total.setAttribute('name','prezenta');
+          total.setAttribute('name','total');
           document.getElementById('om').appendChild(total);
 
 
@@ -79,21 +87,7 @@ if(isset($_POST['semian']) && isset($_POST['grupa']) && isset($_POST['saptamana'
 
   }
 
-// if($checkUser < 1) {
-//   die("user is not in database, try again");
-// }
-// else{
-//   echo 'user is in DB';
-//      }
-//
-        // echo "
-        // <script>
-        // redirect();
-        // </script>
-        // ";
-//    }
-//
-// }
+
 }
 mysqli_close($conn);
 ?>
