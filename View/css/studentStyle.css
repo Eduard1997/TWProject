@@ -1,0 +1,799 @@
+body,html{
+    width:95%;
+    margin: 0;
+
+}
+
+
+#poza{
+
+background-size: cover;
+   position: fixed;
+   right: 0;
+   top:0;
+   left:0;
+   width:100%;
+   height: 100%;
+
+
+}
+.logout {
+
+  background: #5bd632;
+  background-image: -webkit-linear-gradient(top, #5bd632, #11240a);
+  background-image: -moz-linear-gradient(top, #5bd632, #11240a);
+  background-image: -ms-linear-gradient(top, #5bd632, #11240a);
+  background-image: -o-linear-gradient(top, #5bd632, #11240a);
+  background-image: linear-gradient(to bottom, #5bd632, #11240a);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 26px;
+  padding: 9px 19px 10px 20px;
+  text-decoration: none;
+}
+
+.logout:hover {
+  background: #a3fc3c;
+  background-image: -webkit-linear-gradient(top, #a3fc3c, #263613);
+  background-image: -moz-linear-gradient(top, #a3fc3c, #263613);
+  background-image: -ms-linear-gradient(top, #a3fc3c, #263613);
+  background-image: -o-linear-gradient(top, #a3fc3c, #263613);
+  background-image: linear-gradient(to bottom, #a3fc3c, #263613);
+  text-decoration: none;
+}
+#nume{
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    margin-bottom: 7%;
+    padding-top: 5%;
+    font-family: 'Stalinist One', cursive;
+    font-size: 300%;
+}
+
+#profil{
+    position: absolute;
+    top: 35%;
+    left: 48px;
+    background:    linear-gradient(#02d4a0, #000000);
+    border:        1px solid #000000;
+    border-radius: 5px;
+    padding:       8px 20px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal 700 20px/1 "Komika", cursive;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+}
+#back
+{
+    position: relative;
+    top:10%;
+    width: 20%;
+}
+
+#student{
+    position: relative;
+}
+
+#back{
+     position: relative;
+    top:10%;
+    background-image: "imagini/BackButton.png";
+
+    font-weight: 100;
+
+}
+
+
+.cursuri a{
+    position: relative;
+    left: 6%;
+    bottom:30px;
+    display: inline-block;
+    height:30px;
+    width: 90px;
+    border-style: none;
+    background-size: 100%;
+    background:    linear-gradient(#1fd407, #01241b);
+    border:        1px solid #000000;
+    border-radius: 5px;
+    padding:       8px 20px;
+    color:         #ffffff;
+    font:          normal 700 20px/1 "Komika", cursive;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+    text-decoration: none;
+}
+
+
+#activitate{
+    display: inline-block;
+    position: relative;
+    font-family: 'Denk One', sans-serif;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-size: 40px;
+
+}
+
+#facebook{
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+    width:5%;
+
+}
+
+#github{
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+    width: 5%;
+
+
+}
+
+#login{
+    position:relative;
+    bottom: 15px;
+    font-size: 30px;
+    display: inline-block;
+
+}
+#login1{
+    position:relative;
+    bottom: 15px;
+    font-size: 30px;
+    display: inline-block;
+
+}
+
+#situatie{
+    position: relative;
+    display: inline-block;
+    font-family: 'Denk One', sans-serif;
+    bottom:240px;
+    margin-left: 60%;
+    font-size: 40px;
+}
+
+#tabelas{
+    position: relative;
+    display: inline-block;
+    float: right;
+    border-collapse: collapse;
+    margin-right: 5%;
+    bottom: 230px;
+
+
+
+}
+
+td,th{
+    border-style: solid;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+
+}
+
+#total{
+    position: relative;
+    font-family: 'Denk One', sans-serif;
+    float: right;
+    display: inline-block;
+    margin-top: 25%;
+    margin-right: -30%;
+}
+
+#prom{
+    position: relative;
+    left: 110px;
+    bottom: 100px;
+    font-family: 'Denk One', sans-serif;
+}
+
+#prom p{
+    font-size: 20px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1580px) and (max-height:  750px)
+{
+
+  .cursuri a{
+
+    width: 6%;
+}
+
+}
+@media screen and (min-width: 1005px) and (max-width: 1290px)
+{
+        .cursuri a{
+
+            width: 15%;
+        }
+        #tabelas{
+            position: relative;
+            display: inline-block;
+            float: right;
+            border-collapse: collapse;
+            margin-right: 0%;
+            bottom: 230px;
+
+        }
+
+        td,th{
+            border-style: solid;
+            width: 90px;
+            height: 30px;
+            text-align: center;
+
+        }
+
+
+}
+
+@media screen and (min-width: 720px) and (max-width: 1005px)
+{
+        .cursuri a{
+
+            width: 13%;
+        }
+         #situatie{
+
+            display: inline-block;
+            font-family: 'Denk One', sans-serif;
+            top:-150px;
+            right: 25%;
+            font-size: 40px;
+            text-align: center;
+        }
+        #total{
+
+            font-family: 'Denk One', sans-serif;
+            display: inline-block;
+            margin-right: -10%;
+            margin-top: 10%;
+        }
+
+        #tabelas{
+            display: inline-block;
+            left: -20px;
+            border-collapse: collapse;
+            margin-top: 70px;
+        }
+        td,th{
+            border-style: solid;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            font-size: 100%;
+        }
+        #nume{
+
+            left: 5%;
+            margin-bottom: 15%;
+            padding-top: 5%;
+            font-family: 'Stalinist One', cursive;
+            font-size: 200%;
+        }
+
+        #facebook{
+            width:10%;
+            margin-top: -20%;
+            top:-60px;
+
+        }
+
+        #github{
+            width: 10%;
+            margin-top:0%;
+            top:-120px;
+        }
+
+        #login{
+            position:relative;
+            bottom: 90px;
+            font-size: 24px;
+            margin-left: 0px;
+            margin-bottom: 60px;
+        }
+
+
+        #login1{
+            position:relative;
+            bottom: 140px;
+            font-size: 24px;
+            margin-left:0px;
+            margin-bottom: 60px;
+
+        }
+        #activitate{
+
+            display: inline-block;
+            position: relative;
+            font-family: 'Denk One', sans-serif;
+            margin-left: 35%;
+            margin-top: 2%;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20%;
+        }
+        #prom{
+            position: relative;
+            left: 100px;
+            margin-top: 60%;
+            font-family: 'Denk One', sans-serif;
+            font-size: 110%;
+        }
+
+}
+
+@media screen and (min-width: 580px) and (max-width: 720px)
+{
+        .cursuri a{
+
+            width: 11%;
+        }
+         #situatie{
+
+            display: inline-block;
+            font-family: 'Denk One', sans-serif;
+            top:0px;
+            right: 25%;
+            font-size: 40px;
+            text-align: center;
+        }
+        #total{
+
+            font-family: 'Denk One', sans-serif;
+            display: inline-block;
+            margin-right: 80%;
+            margin-top:-60%;
+        }
+
+        #tabelas{
+            display: inline-block;
+            left: 20px;
+            border-collapse: collapse;
+            margin-top: 40%;
+        }
+        td,th{
+            border-style: solid;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            font-size: 110%;
+        }
+        #nume{
+
+            left: 5%;
+            margin-bottom: 15%;
+            padding-top: 5%;
+            font-family: 'Stalinist One', cursive;
+            font-size: 200%;
+        }
+
+        #facebook{
+            width:15%;
+            margin-top: -10%;
+
+        }
+
+        #github{
+            width: 15%;
+            margin-top:-1%;
+            top:-20px;
+        };
+
+        #login{
+            position:relative;
+            bottom: 40px;
+            font-size: 24px;
+            margin-left: 100px;
+            top:20%;
+        }
+
+
+        #login1{
+            position:relative;
+            bottom: 40px;
+            font-size: 30px;
+            margin-left: 0px;
+            top:20%;
+            margin-top: 15%;
+        }
+        #activitate{
+            display: inline-block;
+            position: relative;
+            font-family: 'Denk One', sans-serif;
+            margin-left: 10%;
+            margin-top: 2%;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20%;
+        }
+        #prom{
+            position: relative;
+            left: 80px;
+            margin-top: 60%;
+            font-family: 'Denk One', sans-serif;
+            font-size: 120%;
+        }
+
+}
+@media screen and (min-width: 505px) and (max-width: 580px)
+{
+        .cursuri a{
+
+            width: 10%;
+        }{
+
+            #situatie
+            display: inline-block;
+            font-family: 'Denk One', sans-serif;
+            top:0px;
+            right: 25%;
+            font-size: 40px;
+            text-align: center;
+        }
+        #total{
+
+            font-family: 'Denk One', sans-serif;
+            display: inline-block;
+            margin-right: 80%;
+            margin-top:-70%;
+        }
+
+        #tabelas{
+            display: inline-block;
+            left: 20px;
+            border-collapse: collapse;
+            margin-top: 40%;
+        }
+        td,th{
+            border-style: solid;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            font-size: 110%;
+        }
+        #nume{
+
+            left: 5%;
+            margin-bottom: 15%;
+            padding-top: 5%;
+            font-family: 'Stalinist One', cursive;
+            font-size: 200%;
+        }
+
+        #facebook{
+            width:15%;
+            margin-top: -10%;
+
+        }
+
+        #github{
+            width: 15%;
+            margin-top:-1%;
+            top:-20px;
+        };
+
+        #login{
+            position:relative;
+            bottom: 40px;
+            font-size: 24px;
+            margin-left: 100px;
+            top:20%;
+        }
+
+
+        #login1{
+            position:relative;
+            bottom: 40px;
+            font-size: 30px;
+            margin-left: 0px;
+            top:20%;
+            margin-top: 15%;
+        }
+        #activitate{
+            display: inline-block;
+            position: relative;
+            font-family: 'Denk One', sans-serif;
+            margin-left: 10%;
+            margin-top: 2%;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20%;
+        }
+        #prom{
+            position: relative;
+            left: 80px;
+            margin-top: 20%;
+            top: -130px;
+            font-family: 'Denk One', sans-serif;
+            font-size: 120%;
+        }
+
+}
+
+@media screen and (min-width: 380px) and (max-width: 505px)
+{
+        .cursuri a{
+
+            width: 30%;
+            margin-left: 7%;
+        }
+        #situatie{
+
+            display: inline-block;
+            font-family: 'Denk One', sans-serif;
+            top:0px;
+            right: 25%;
+            font-size: 40px;
+            text-align: center;
+        }
+        #total{
+
+            font-family: 'Denk One', sans-serif;
+            display: inline-block;
+            margin-right: 110%;
+            margin-top:-100%;
+        }
+
+        #tabelas{
+            display: inline-block;
+            left: 20px;
+            border-collapse: collapse;
+            margin-top: 60%;
+        }
+        td,th{
+            border-style: solid;
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            font-size: 80%;
+        }
+        #nume{
+
+            left: 5%;
+            margin-bottom: 15%;
+            padding-top: 5%;
+            font-family: 'Stalinist One', cursive;
+            font-size: 200%;
+        }
+
+        #facebook{
+            width:15%;
+            margin-top: -10%;
+
+        }
+
+        #github{
+            width: 15%;
+            margin-top:-1%;
+            top:-20px;
+        };
+
+        #login{
+            position:relative;
+            bottom: 40px;
+            font-size: 24px;
+            margin-left: 100px;
+            top:20%;
+        }
+
+
+        #login1{
+            position:relative;
+            bottom: 40px;
+            font-size: 30px;
+            margin-left: 0px;
+            top:20%;
+            margin-top: 15%;
+        }
+        #activitate{
+            display: inline-block;
+            position: relative;
+            font-family: 'Denk One', sans-serif;
+            margin-left: 10%;
+            margin-top: 2%;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20%;
+        }
+        #prom{
+            position: relative;
+            left: 40px;
+            bottom: 150px;
+            font-family: 'Denk One', sans-serif;
+            font-size: 120%;
+        }
+
+}
+@media screen and (min-width: 326px) and (max-width: 380px)
+{
+        .cursuri a{
+
+            width: 29%;
+            margin-left:6% ;
+        }
+         #situatie{
+
+            display: inline-block;
+            font-family: 'Denk One', sans-serif;
+            top:0px;
+            right: 25%;
+            font-size: 40px;
+            text-align: center;
+        }
+        #total{
+
+            font-family: 'Denk One', sans-serif;
+            display: inline-block;
+            margin-right: 110%;
+            margin-top:-110%;
+        }
+
+        #tabelas{
+            display: inline-block;
+            left: 20px;
+            border-collapse: collapse;
+            margin-top: 60%;
+        }
+        td,th{
+            border-style: solid;
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            font-size: 80%;
+        }
+        #nume{
+
+            left: 5%;
+            margin-bottom: 7%;
+            padding-top: 5%;
+            font-family: 'Stalinist One', cursive;
+            font-size: 200%;
+        }
+
+        #facebook{
+            width:15%;
+            margin-top: -10%;
+
+        }
+
+        #github{
+            width: 15%;
+            margin-top: -10%;
+        }
+
+        #login{
+            position:relative;
+            bottom: 40px;
+            font-size: 24px;
+            margin-left: 100px;
+        }
+         #login1{
+            position:relative;
+            bottom: 40px;
+            font-size: 24px;
+            margin-left: 100px;
+        }
+
+        #activitate{
+            display: inline-block;
+            position: relative;
+            font-family: 'Denk One', sans-serif;
+            margin-left: 10%;
+            margin-top: 2%;
+            font-size: 40px;
+            text-align: center;
+        }
+        #prom{
+            position: relative;
+            left: 40px;
+            bottom: 150px;
+            font-family: 'Denk One', sans-serif;
+            font-size: 120%;
+        }
+
+
+}
+@media screen and (min-width: 200px) and (max-width: 326px)
+{
+        .cursuri a{
+
+            width: 27%;
+            margin-left:6% ;
+        }
+        #situatie{
+
+            display: inline-block;
+            font-family: 'Denk One', sans-serif;
+            top:0px;
+            right: 30%;
+            font-size: 40px;
+        }
+        #total{
+
+            font-family: 'Denk One', sans-serif;
+            display: inline-block;
+            margin-right: 120%;
+            margin-top:-120%;
+        }
+
+        #tabelas{
+            display: inline-block;
+            left: 20px;
+            border-collapse: collapse;
+            margin-top: 80%;
+        }
+        td,th{
+            border-style: solid;
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            font-size: 80%;
+        }
+        #nume{
+
+            left: 5%;
+            margin-bottom: 7%;
+            padding-top: 5%;
+            font-family: 'Stalinist One', cursive;
+            font-size: 200%;
+        }
+
+        #facebook{
+            width:15%;
+            margin-top:-6%;
+        }
+
+        #github{
+            width: 15%;
+             margin-top:-6%;
+        }
+
+        #login{
+            position:relative;
+            bottom: 40px;
+            font-size: 24px;
+            margin-left: 100px;
+        }
+         #login{
+            position:relative;
+            bottom: 40px;
+            font-size: 24px;
+            margin-left: 100px;
+        }
+
+        #activitate{
+            display: inline-block;
+            position: relative;
+            font-family: 'Denk One', sans-serif;
+            margin-left: 10%;
+            margin-top: 2%;
+            font-size: 40px;
+            text-align: center;
+        }
+        #prom{
+            position: relative;
+            left: 50px;
+            bottom: 100px;
+            font-family: 'Denk One', sans-serif;
+        }
+
+
+}
+
+
+#back
+{
+    position: relative;
+    top:20%;
+}

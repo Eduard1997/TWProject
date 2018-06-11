@@ -1,0 +1,947 @@
+
+@media screen and (min-width: 1005px) and (max-width: 1005px) and (max-height:  200px)
+{
+
+#PC{
+    overflow: hidden;
+    display:block;
+    height:60px;
+    width: 100%;
+    background: #fcda9c;
+    position: fixed;
+    top:0%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style:solid;
+    margin:0;
+}
+.meniu a{
+    background: #fcda9c;
+    display: inline-block;
+    height:60px;
+    width: 10%;
+    border-style: none;
+    background-size: 100%;
+    text-decoration: none;
+    color: #000;
+    font-family: 'BioRhyme', serif;
+    font-size: 80%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#home
+{
+    background-size: 170%;
+}
+
+#home #edy_back
+{
+    margin-top: 30%;
+    margin-right: -28%;
+    width: 20%;
+
+}
+
+#home #oly_back
+{
+    margin-top: 15%;
+    margin-right: -45%;
+    width: 20%;
+}
+#home #teo_back
+{
+    margin-right: 30%;
+    width: 15%;
+
+}
+
+#anonim{
+    display: inline-block;
+    margin-left:-35%;
+    width:32%;
+}
+
+#student{
+    display: inline-block;
+    width:45%;
+}
+
+.prof{
+    display: inline-block;
+        margin-left: 75%;
+    width:38%;
+    margin-bottom: 10px;
+}
+.margin-logIn h1{
+        display: inline-block;
+        margin-left: 200px;
+}
+
+#edy{
+ display: inline-block;
+ margin-top: 5%;
+ width: 12%;
+
+}
+
+#oly{
+    margin-top: 1%;
+     width: 12%;
+
+}
+
+#teo{
+display: inline-block;
+margin-top: 5%;
+width: 7%;
+
+}
+
+#edy-contact{
+    margin-top:-25%;
+    margin-right: 30%;
+    width: 13%;
+}
+#teo-contact{
+    margin-top: -30%;
+    margin-right: 8%;
+    width: 10%;
+}
+#oly-contact{
+    margin-top: -15%;
+    margin-right: 10%;
+    width: 13%;
+}
+
+
+ #algoritm{
+    background-image:url(../../View/imagini/algoritm.jpg);
+    margin-bottom: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+
+#algoritm #algoritm-titlu
+{
+    text-align: center;
+    font-size: 300%;
+    color: rgb(2, 0, 0);
+    font-family: 'Indie Flower', cursive;
+    padding-top: 5%;
+    margin-top: 0%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#algoritm p
+{
+    margin-top: -1%;
+    font-family: 'Salsa', cursive;
+    margin-left: 15%;
+    margin-right: 5%;
+    font-size: 110%;
+    font-weight: bold;
+
+}
+#algoritm ul
+{
+    font-family: 'Salsa', cursive;
+    margin-left: 17%;
+    margin-right: 5%;
+    font-size: 110%;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+
+#contact h2{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 150%;
+    color: rgb(2, 0, 0);
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: 300%;
+    color: rgb(2, 0, 0);
+    padding-top: 80px;
+}
+
+#contact form{
+    margin-top:5%;
+}
+#contact #casuta{
+    margin-left: 15%;
+    padding: 1%;
+    display: inline-block;
+    width: 400px;
+    background-color: #ffd17b;
+    border: 100%;
+    border-color: rgb(145, 146, 146);
+    text-decoration-style: solid;
+    text-decoration: black;
+    -webkit-text-size-adjust: 200px;
+}
+#contact #mesaj{
+    margin-left: 15%;
+    padding: 1%;
+    display: inline-block;
+    width: 400px;
+    height:150px;
+    background-color: #ffd17b;
+    border-color: rgb(145, 146, 146);
+    border-style: inset;
+    border-width: 2px;
+
+}
+
+
+
+}
+@media screen and (min-width: 720px) and (max-width: 1005px)
+{
+
+#PC{
+    overflow: hidden;
+    display:block;
+    height:60px;
+    width: 100%;
+    background: #fcda9c;
+    position: fixed;
+    top:0%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style:solid;
+    margin:0;
+}
+.meniu a{
+    background: #fcda9c;
+    display: inline-block;
+    height:60px;
+    width: 15%;
+    border-style: none;
+    background-size: 100%;
+    text-decoration: none;
+    color: #000;
+    font-family: 'BioRhyme', serif;
+    font-size: 80%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#home #edy_back
+{
+    margin-top: 30%;
+    margin-right: -28%;
+    width: 20%;
+
+}
+
+#home #oly_back
+{
+    margin-top: 15%;
+    margin-right: -45%;
+    width: 20%;
+}
+#home #teo_back
+{
+    margin-right: 30%;
+    margin-top: 5%;
+    width: 15%;
+
+}
+
+#anonim{
+    display: inline-block;
+    margin-left:-35%;
+    width:32%;
+}
+
+#student{
+    display: inline-block;
+    width:45%;
+}
+
+.prof{
+    display: inline-block;
+        margin-left: 75%;
+    width:38%;
+    margin-bottom: 10px;
+}
+.margin-logIn h1{
+        display: inline-block;
+        margin-left: 150px;
+        font-size: 180%;
+}
+
+#edy{
+ display: inline-block;
+ margin-top: 5%;
+ width: 14%;
+
+}
+
+#oly{
+    margin-top: 1%;
+     width: 13%;
+
+}
+
+#teo{
+display: inline-block;
+margin-top: 8%;
+width: 8%;
+
+}
+
+#edy-contact{
+    margin-top:-30%;
+    margin-right: 27%;
+    width: 18%;
+}
+#teo-contact{
+    margin-top: -35%;
+    margin-right: 6%;
+    width: 15%;
+}
+#oly-contact{
+    margin-top: -18%;
+    margin-right: 6%;
+    width: 18%;
+}
+
+
+ #algoritm{
+    background-image:url(../../View/imagini/algoritm.jpg);
+    margin-bottom: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+
+#algoritm #algoritm-titlu
+{
+    text-align: center;
+    font-size: 200%;
+    color: rgb(2, 0, 0);
+    font-family: 'Indie Flower', cursive;
+    margin-bottom:1%;
+    padding-top: 10%;
+    margin-top: 0%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#algoritm p
+{
+    margin-top: -2%;
+    font-family: 'Salsa', cursive;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 85%;
+    font-weight: bold;
+
+}
+#algoritm ul
+{
+    font-family: 'Salsa', cursive;
+    margin-top: -2%;
+    margin-left: 17%;
+    margin-right: 5%;
+    font-size: 85%;
+    font-weight: bold;
+    margin-bottom: 2%;
+
+}
+
+
+#contact h2{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 10%;
+    color: rgb(2, 0, 0);
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: 200%;
+    color: rgb(2, 0, 0);
+    padding-top: 80px;
+}
+
+
+ .contact-button{
+    margin-left:   35%;
+    background:    #ff9900;
+    background:    -webkit-linear-gradient(#ff9900, #000000);
+    background:    linear-gradient(#ff9900, #000000);
+    border:        1px solid #000000;
+    border-radius: 5px;
+    padding:       5px 15px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal 700 15px/1 "Komika", cursive;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+
+  }
+
+#contact form{
+    margin-top:5%;
+}
+#contact #casuta{
+    margin-top: -10%;
+    margin-left: 10%;
+    padding: 1%;
+    display: inline-block;
+    width: 300px;
+    background-color: #ffd17b;
+    border: 100%;
+    border-color: rgb(145, 146, 146);
+    text-decoration-style: solid;
+    text-decoration: black;
+    -webkit-text-size-adjust: 200px;
+}
+#contact #mesaj{
+    margin-left: 10%;
+    padding: 1%;
+    display: inline-block;
+    width: 300px;
+    height:80px;
+    background-color: #ffd17b;
+    border-color: rgb(145, 146, 146);
+    border-style: inset;
+    border-width: 2px;
+
+}
+#about-title{
+    text-align: center;
+    font-size: 300%;
+    color: rgb(2, 0, 0);
+    font-family: 'Indie Flower', cursive;
+    display: inline-block;
+    margin-top: -20px;
+
+}
+#about-text{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 100%;
+    color: rgb(2, 0, 0);
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: -6%;
+
+}
+}
+
+@media screen and (min-width: 580px) and (max-width: 720px)
+{
+
+#PC{
+    overflow: hidden;
+    display:block;
+    height:60px;
+    width: 100%;
+    background: #fcda9c;
+    position: fixed;
+    top:0%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style:solid;
+    margin:0;
+}
+.meniu a{
+    background: #fcda9c;
+    display: inline-block;
+    height:60px;
+    width: 15%;
+    border-style: none;
+    background-size: 100%;
+    text-decoration: none;
+    color: #000;
+    font-family: 'BioRhyme', serif;
+    font-size: 80%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#home #edy_back
+{
+    margin-top: 38%;
+    margin-right: -35%;
+    width: 25%;
+
+}
+
+#home #oly_back
+{
+    margin-top: 20%;
+    margin-right: -45%;
+    width: 25%;
+}
+#home #teo_back
+{
+    margin-right: 30%;
+    width: 18%;
+    margin-top: 10%;
+
+}
+
+#anonim{
+    display: inline-block;
+    margin-left:-35%;
+    width:32%;
+}
+
+#student{
+    display: inline-block;
+    width:45%;
+}
+
+.prof{
+    display: inline-block;
+        margin-left: 75%;
+    width:38%;
+    margin-bottom: 10px;
+}
+.margin-logIn h1{
+        display: inline-block;
+        margin-left: 100px;
+        font-size: 200%;
+}
+
+
+
+#about-title{
+    text-align: center;
+    font-size: 350%;
+    color: rgb(2, 0, 0);
+    font-family: 'Indie Flower', cursive;
+    display: inline-block;
+    margin-top: -20px;
+}
+#about-text{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 100%;
+    color: rgb(2, 0, 0);
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: -8%;
+
+}
+
+#edy{
+ display: inline-block;
+ margin-top: 5%;
+ width: 14%;
+
+}
+
+#oly{
+    margin-top: 1%;
+     width: 14%;
+
+}
+
+#teo{
+display: inline-block;
+margin-top: 10%;
+width: 8%;
+
+}
+
+#edy-contact{
+    margin-top:-40%;
+    margin-right: 20%;
+    width: 18%;
+}
+#teo-contact{
+    margin-top: -40%;
+    margin-right: 4%;
+    width: 15%;
+}
+#oly-contact{
+    margin-top: -18%;
+    margin-right: 4%;
+    width: 18%;
+}
+
+
+ #algoritm{
+    background-image:url(../../View/imagini/algoritm.jpg);
+    margin-bottom: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+
+#algoritm #algoritm-titlu
+{
+    text-align: center;
+    font-size: 200%;
+    color: rgb(2, 0, 0);
+    font-family: 'Indie Flower', cursive;
+    padding-top: 10%;
+    margin-top: 0%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    margin-bottom: 1%;
+}
+
+#algoritm p
+{
+    margin-top: -2%;
+    font-family: 'Salsa', cursive;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 80%;
+    font-weight: bold;
+
+}
+#algoritm ul
+{
+    font-family: 'Salsa', cursive;
+     margin-top: -2%;
+    margin-left: 10%;
+    margin-right: 2%;
+    font-size: 80%;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+
+#contact h2{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 10%;
+    color: rgb(2, 0, 0);
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: 200%;
+    color: rgb(2, 0, 0);
+    padding-top: 80px;
+}
+
+#contact form{
+    margin-top:5%;
+}
+#contact #casuta{
+    margin-left: 10%;
+    padding: 1%;
+    display: inline-block;
+    width: 280px;
+    background-color: #ffd17b;
+    border: 100%;
+    border-color: rgb(145, 146, 146);
+    text-decoration-style: solid;
+    text-decoration: black;
+    -webkit-text-size-adjust: 200px;
+}
+#contact #mesaj{
+    margin-left: 10%;
+    padding: 1%;
+    display: inline-block;
+    width: 280px;
+    height:70px;
+    background-color: #ffd17b;
+    border-color: rgb(145, 146, 146);
+    border-style: inset;
+    border-width: 2px;
+
+}
+  .contact-button{
+    margin-left:   45%;
+    background:    #ff9900;
+    background:    -webkit-linear-gradient(#ff9900, #000000);
+    background:    linear-gradient(#ff9900, #000000);
+    border:        1px solid #000000;
+    border-radius: 5px;
+    padding:       5px 15px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal 700 10px/1 "Komika", cursive;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+
+  }
+
+}
+@media screen and (min-width: 505px) and (max-width: 580px)
+{
+
+#PC{
+    overflow: hidden;
+    display:block;
+    height:60px;
+    width: 100%;
+    background: #fcda9c;
+    position: fixed;
+    top:0%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style:solid;
+    margin:0;
+}
+.meniu a{
+    background: #fcda9c;
+    display: inline-block;
+    height:60px;
+    width: 15%;
+    border-style: none;
+    background-size: 100%;
+    text-decoration: none;
+    color: #000;
+    font-family: 'BioRhyme', serif;
+    font-size: 80%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#home #edy_back
+{
+    margin-top: 38%;
+    margin-right: -35%;
+    width: 25%;
+
+}
+
+#home #oly_back
+{
+    margin-top: 20%;
+    margin-right: -45%;
+    width: 25%;
+}
+#home #teo_back
+{
+    margin-right: 30%;
+    width: 18%;
+    margin-top: 10%;
+
+}
+
+#anonim{
+    display: inline-block;
+    margin-left:-35%;
+    width:32%;
+}
+
+#student{
+    display: inline-block;
+    width:45%;
+}
+
+.prof{
+    display: inline-block;
+        margin-left: 75%;
+    width:38%;
+    margin-bottom: 10px;
+}
+.margin-logIn h1{
+        display: inline-block;
+        margin-left: 90px;
+        font-size: 200%;
+}
+
+
+
+#about-title{
+    text-align: center;
+    font-size: 300%;
+    color: rgb(2, 0, 0);
+    font-family: 'Indie Flower', cursive;
+    display: inline-block;
+    margin-top: -20px;
+}
+#about-text{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 90%;
+    color: rgb(2, 0, 0);
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: -8%;
+
+}
+
+#edy{
+ display: inline-block;
+ margin-top: 5%;
+ width: 14%;
+
+}
+
+#oly{
+    margin-top: 1%;
+     width: 14%;
+
+}
+
+#teo{
+display: inline-block;
+margin-top: 11%;
+width: 8%;
+
+}
+
+#edy-contact{
+    position: relative;
+    margin-top:-29%;
+    margin-right: 75%;
+    width: 22%;
+}
+#teo-contact{
+    margin-top: -50%;
+    margin-right: 80%;
+    width: 18%;
+}
+#oly-contact{
+    margin-top: -50%;
+    margin-right: 0%;
+    width: 21%;
+}
+
+
+ #algoritm{
+    background-image:url(../../View/imagini/algoritm.jpg);
+    margin-bottom: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+
+#algoritm #algoritm-titlu
+{
+    text-align: center;
+    font-size: 170%;
+    color: rgb(2, 0, 0);
+    font-family: 'Indie Flower', cursive;
+    padding-top: 10%;
+    margin-bottom: 2%;
+    margin-top: 0%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#algoritm p
+{
+    margin-top: -2%;
+    font-family: 'Salsa', cursive;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 70%;
+    font-weight: bold;
+
+}
+#algoritm ul
+{
+    margin-top: -2%;
+    font-family: 'Salsa', cursive;
+    margin-left: 10%;
+    margin-right: 5%;
+    font-size: 70%;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+
+#contact h2{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 10%;
+    color: rgb(2, 0, 0);
+    margin-left: 25%;
+    margin-right: 30%;
+    text-align: center;
+    font-size: 180%;
+    color: rgb(2, 0, 0);
+    padding-top: 80px;
+    margin-bottom: -5%;
+}
+
+#contact form{
+    margin-top:5%;
+}
+#contact #casuta{
+    margin-left: 25%;
+    padding: 1%;
+    display: inline-block;
+    width: 250px;
+    background-color: #ffd17b;
+    border: 100%;
+    border-color: rgb(145, 146, 146);
+    text-decoration-style: solid;
+    text-decoration: black;
+    -webkit-text-size-adjust: 200px;
+}
+#contact #mesaj{
+    margin-left: 25%;
+    padding: 1%;
+    display: inline-block;
+    width: 250px;
+    height:100px;
+    background-color: #ffd17b;
+    border-color: rgb(145, 146, 146);
+    border-style: inset;
+    border-width: 2px;
+
+}
+  .contact-button{
+    margin-left:   75%;
+
+    background:    #ff9900;
+    background:    -webkit-linear-gradient(#ff9900, #000000);
+    background:    linear-gradient(#ff9900, #000000);
+    border:        1px solid #000000;
+    border-radius: 5px;
+    padding:       5px 15px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal 700 15px/1 "Komika", cursive;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+    position: relative;
+    top: -40px;
+
+  }
+
+
+}

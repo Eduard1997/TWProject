@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster+Two" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel='stylesheet' type='text/css' href="./css/style.css" media="all">
+	<link rel='stylesheet' type='text/css' href="./css/responsive.css" media="all">
+	<!--
+		<link rel='stylesheet' type='text/css' href="./responsive.css" media="all">
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400i" rel="stylesheet">
+	<title>eStudy</title>
+	<meta charset="UTF-8">
+</head>
+
+<body onload="setLogin()">
+
+	<header id="PC">
+		<nav class="meniu">
+			<a href="#home"><b>Acasă</b></a>
+			<a href="#about"><b>Despre noi</b></a>
+			<a href="#logIn"><b>LogIn</b></a>
+			<a href="#algoritm"><b>Algoritm note</b></a>
+			<a href="#contact"><b>Contactează-ne</b></a>
+			<img id = "logo" src="/TW/View/imagini/Logo1.png" align="right">
+		</nav>
+
+	</header>
+<header id="resp">
+		<nav class="menu__button"> <button type="button"> Menu </button>
+</nav>
+</header>
+
+
+	<section id="home">
+		 <img id="teo_back" src="./imagini/teo_back.png" align="right">
+		 <img id="oly_back" src="./imagini/oly_back.png" align="right">
+		 <img id="edy_back" src="./imagini/edy_back.png" align="right">
+	</section>
+	<section id="about" align="middle">
+	<img id="teo" src="./imagini/teo.png">
+		<h1 id="about-title" style="text-align:center;">Despre noi</h1>
+		<img id="edy" src="./imagini/edy.jpg">
+		<h2 id="about-text" >Suntem o echipă de studenți dedicați de la Facultatea de Informatică din Iași și am colaborat la acest proiect
+			pentru a vă spori șansele de reușită în cadrul disciplinei <em>Tehnologii Veb</em> prin implementarea unor algoritmi care să vă țină mereu la curent cu
+			situația dumneavoastră.
+		</h2>
+
+		<img id="oly" src="./imagini/oly.jpg" align="center">
+
+	</section>
+
+	<section id="logIn">
+
+
+			<div class="margin-logIn">
+				<h1>Log in</h1>
+				<br/>
+				<br/>
+				<div class="logo">
+						<div>
+								<img id = "anonim" src="./imagini/anonymous.png" alt="anonym" onclick="anonim()">
+							</div>
+					<img id = "student" src="./imagini/student.png" alt="student" onclick="autolog2();">
+						<div id="id01" class="modal">
+
+								<form class="modal-content animate" action="<?php echo htmlspecialchars('studentAuth.php') ?>" method="post">
+								  <div class="imgcontainer">
+									<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+									<img src="./imagini/student.png" alt="Avatar" class="avatar">
+								  </div>
+
+								  <div class="container">
+									<label for="uname" style="color:black"><b>Username</b></label>
+									<input type="text" id="user" placeholder="Enter Username" name="studUsername"  required >
+
+									<label for="psw" style="color:black"><b>Password</b></label>
+									<input type="password" id="pass" placeholder="Enter Password" name="studPassword"  required>
+
+									<input type="checkbox" name="rememberMe">
+
+									<label for="rememberMe">Remember me</label>
+									<br>
+									<button type="submit">Login</button>
+
+
+
+
+								  </div>
+
+								  <div class="container" style="background-color:#f1f1f1">
+									<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><b>Cancel</b></button>
+								  </div>
+								</form>
+							  </div>
+
+					<img class = "prof" src="./imagini/profesor.png" alt="profesor" onclick="autoLog()">
+					<div id="id02" class="modal">
+								<form class="modal-content animate" action="<?php echo htmlspecialchars('profAuth.php') ?>" method="post">
+
+							  <div class="imgcontainer">
+								<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+								<img src="./imagini/profesor.png" alt="Avatar" class="avatar">
+							  </div>
+
+							  <div class="container">
+								<label for="uname" style="color:black"><b>Username</b></label>
+								<input type="text" placeholder="Enter Username" name="profUser" id="puser" required>
+
+								<label for="psw" style="color:black"><b>Password</b></label>
+								<input type="password" placeholder="Enter Password" name="profPass" id="ppass" required>
+								<input type="checkbox" name="rememberMeProf">
+
+								<label for="rememberMeProf">Remember me</label>
+								<br>
+								<button type="submit">Login</button>
+
+
+							  </div>
+
+							  <div class="container" style="background-color:#f1f1f1">
+								<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn"><b>Cancel</b></button>
+							  </div>
+							</form>
+						  </div>
+				</div>
+
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</section>
+<section id="algoritm">
+			<h1 id="algoritm-titlu" align="center"> Descrierea algoritmului folosit </h1>
+			<div>
+			<p>În funcție de cele introduse de profesori și de statistica generală, studenții logați în aplicație vor avea un profil personal de promovabilitate (de exemplu, dacă un student a acumulat 8 prezențe și cel mai bun din an are 10, atunci va avea 80% șanse de promovare). </p>
+			<p>Studentul va primi un scor final public și un pronostic ("DA/NU") de promovabilitate a materiei.</p>
+			<p>Evaluarea la această disciplină va consta din următoarele componente obligatorii:</p>
+			<ul>
+			<li><b>P</b> - Proiect</li>
+			<li><b>CF</b> - Commit-uri pe github/Facebook events</li>
+			<li><b>Pr</b> - Prezențe la disciplina Tehnologii Web;</li>
+			<li><b>A</b> - Activitate, intervenții la seminar/curs;</li>
+			<li><b>T</b> -  Notele celor 3 teste scrise neanunţate în cadrul cursului.</li>
+			</ul>
+			<p><b>PF</b> = <b>P</b> * 0.4 + <b>CF</b> * 0.3 + <b>Pr</b> * 0.1 + <b>A</b> * 0.1 + <b>T</b> * 0.1,  în care <b>T</b> = sum(<b>Ti</b> : i =(1, 2, 3)).</p>
+			<p>Pentru a promova, fiecare student trebuie să obţină minim 10 puncte la Pr, 5 puncte la P, CF, A și T. Informațiile vor putea fi partajate pe diverse rețele sociale.</p>
+			</div>
+</section>
+
+<section id="contact">
+		 <h2>Contactează-ne</h2>
+
+	<form action="/TW/Controller/sendmail.php" method="POST">
+		<input id="casuta"type="text" placeholder="Numele și prenumele dumnveastră" name="name"><br/>
+		<input id="casuta" type="email" placeholder="Email-ul dumnveastră" name="email"><br/>
+		<input id="casuta" type="text" placeholder="Numărul de telefon" name="telefon"><br/>
+		<textarea id="mesaj" type="text" placeholder="Write something.." name="mesaj"></textarea>
+		<br>
+		<input type="submit" class="contact-button">
+	</form>
+		 <img id="teo-contact" src="./imagini/teo_contact.png" align="right">
+		 <img id="edy-contact" src="./imagini/edy_contact.png" align="right">
+		 <img id="oly-contact" src="./imagini/oly_contact.png" align="right">
+
+</section>
+
+<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+		</script>
+
+<script>
+		// Get the modal
+		var modal = document.getElementById('id02');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+		</script>
+
+
+
+<script>
+	function anonim(){
+		window.open("https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html");
+	}
+</script>
+<!-- <script>
+
+	var x = getCookieUser();
+	var y = getCookiePass();
+	var z = getCookieName();
+	window.alert(x+y+z);
+
+</script> -->
+<script>
+function getCookieUser() {
+    var name = "username" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+<script>
+function getCookieName() {
+    var name = "name" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+<script>
+function getCookiePass() {
+    var name = "password" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+
+
+<script>
+function getProfCookieUser() {
+    var name = "Profusername" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+<script>
+function getProfCookieName() {
+    var name = "Profname" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+<script>
+function getProfCookiePass() {
+    var name = "Profpassword" + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
+
+<script>
+function setLogin(){
+	var user = getCookieUser();
+	var pass = getCookiePass();
+	var name = getCookieName();
+
+	var puser = getProfCookieUser();
+	var ppass = getProfCookiePass();
+	var pname = getProfCookieName();
+	var userForm = document.getElementById("user");
+	var userPass = document.getElementById("pass");
+	if(user != null){
+		userForm.value = user;
+	}
+	if(pass != null){
+		userPass.value = pass;
+	}
+
+	var puserForm = document.getElementById("puser");
+	var puserPass = document.getElementById("ppass");
+	if(puser != null){
+		puserForm.value = puser;
+	}
+	if(ppass != null){
+		puserPass.value = ppass;
+	}
+
+
+}
+</script>
+<script>
+function autoLog(){
+	var x = getProfCookieUser();
+	var y = getProfCookiePass();
+	if(x.length > 1 && y.length > 1){
+		window.open("/TW/View/profesor.html", "_self");
+	} else{
+		document.getElementById('id02').style.display='block';
+	}
+
+}
+</script>
+
+<script>
+function autolog2(){
+	var a = getCookieUser();
+	var b = getCookiePass();
+
+	 if(a.length > 1 && b.length > 1){
+
+		window.open("displayGrades.php", "_self");
+	}
+	else{
+		document.getElementById('id01').style.display='block';
+	}
+}
+console.log(getCookieUser());
+console.log(getCookiePass());
+</script>
+
+<script>
+console.log(document.cookie);
+</script>
+</body>
+
+</html>

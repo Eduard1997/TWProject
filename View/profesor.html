@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="./css/profStyle.css" media="all">
+<link rel='stylesheet' type='text/css' href="./css/pstyle.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Stalinist+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Croissant+One|Sancreek" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+
+    <title>Professor page</title>
+
+</head>
+<body onload="setName()">
+    <img src="./imagini/prof_back.jpg" id="poza">
+      <button><a href="index.php"><img src="imagini/BackButton.png" id="back"></a></button>
+    <button type="button" id="logOutS" style="position: relative; margin-left:90%; margin-top:5%;" onclick="logout2()">log out </button>
+    <center><h1 id="nume"></h1></center>
+    <center><h2 id="situatie">Administrarea situatiei studentilor</h2></center>
+    <form style="position:relative;" action="../../TW/Model/studentsPrint.php" method="post" id="formular">
+      Semian:
+      <input type="text" placeholder="A, B" name="semian">
+      Grupa:
+      <input type="number" placeholder="1,2,3,4,5" name="grupa">
+      Saptamana:
+      <input type="number" placeholder="1,2,3,4,5,6,7,8,9,10,11,12,13,14" name="saptamana">
+        <button id="clickMe" type="submit">Administreaza</button>
+
+      </form>
+<br>
+
+
+    <script>
+    function getProfCookieName() {
+        var name = "Profname" + "=";
+    		var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+    </script>
+    <script>
+    function setName(){
+
+      var name = getProfCookieName();
+      var numeBun = name.replace('+','  ');
+
+      var profName = document.getElementById("nume");
+      profName.innerHTML = numeBun;
+      console.log(numeBun);
+    }
+    </script>
+<script>
+function logout2(){
+  document.cookie = "Profusername" + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.cookie = "Profpassword" + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.cookie = "Profname" + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  window.open("./index.php","_self");
+
+}
+
+var form = document.getElementById('formular');
+form.onsubmit = function(){
+  let semian= document.getElementsByName('semian')[0].value;
+    if (semian != 'A' && semian != 'B'){
+          alert('Oups: Semianul trebuie sa fie A sau B');
+          return false;
+    }
+
+    let grupa= document.getElementsByName('grupa')[0].value;
+      if(grupa < 1 || grupa > 5){
+            alert('Oups: Grupa trebuie sa fie intre 1 si 5');
+            return false;
+      }
+      let sapt= document.getElementsByName('saptamana')[0].value;
+      if(sapt<1 || sapt>13){
+            alert('Oups: saptamana trebuie sa fie intre 1 si 13');
+            return false;
+      }
+
+      return true;
+}
+
+</script>
+
+</body>
+</html>
+
+
+ <!-- <script>
+var semian = document.getElementById('select1');
+var grupa = document.getElementById('select2');
+var saptamana = document.getElementById('select3');
+</script>  -->
