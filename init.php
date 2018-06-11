@@ -3,7 +3,7 @@ session_start();
 function goToAuthUrl()
 {
     $client_id = "a5679061a89dc900cd11";
-    $redirect_url = "index.php";
+    $redirect_url = "../../TW/View/index.php";
     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         $url = 'https://github.com/login/oauth/authorize?client_id='. $client_id. "&redirect_url=".$redirect_url."&scope=user";
         header("location: $url");
@@ -13,7 +13,7 @@ function goToAuthUrl()
 function fetchData()
 {
     $client_id = "a5679061a89dc900cd11";
-    $redirect_url = "index.php";
+    $redirect_url = "../../TW/View/index.php";
     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         if (isset($_GET['code'])) {
             $code = $_GET['code'];
@@ -108,5 +108,6 @@ else {
   $result1 = mysqli_query($conn, $query1);
 }
 
-header("location: displayGrades.php")
+// header("location: ../../TW/Controller/displayGrades.php");
+header("location: ../../TW/View/gitSucces.html");
 ?>

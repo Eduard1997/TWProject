@@ -6,7 +6,7 @@ $data = fetchData();
 
 
 if (!isset($_SESSION['user'])) {
-    header("location: index.php");
+    header("location: ../../TW/View/index.php");
 }
 
 ?>
@@ -22,5 +22,6 @@ if (!isset($_SESSION['user'])) {
         <?php var_dump($_SESSION['payload']) ?>
         <a href="logout.php">Log Out</a>
     </div>
+
 </body>
 </html>
